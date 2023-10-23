@@ -1,0 +1,55 @@
+.Lifemap {
+    position: absolute;
+    width: 155px;
+    height: 47px;
+    top: 45px;
+    left: 322px;
+  }
+  
+  .Question {
+    position: absolute;
+    width: 116px;
+    height: 29px;
+    top: 45px;
+    left: 578px;
+  }
+  
+  .Bucketlist {
+    position: absolute;
+    width: 143px;
+    height: 29px;
+    top: 45px;
+    left: 749px;
+  }
+  
+  .Community {
+    position: absolute;
+    width: 140px;
+    height: 29px;
+    top: 45px;
+    left: 947px;
+  }
+  
+  .Signin {
+    position: absolute;
+    width: 116px;
+    height: 38px;
+    top: 45px;
+    left: 1351px;
+  }
+
+  .Signup {
+    position: absolute;
+    width: 116px;
+    height: 38px;
+    top: 45px;
+    left: 1482px;
+  }
+
+  .Navbar{
+    position: absolute;
+    height:130px;
+    width:1920px;
+    background-color: white;
+  }
+  
