@@ -2,48 +2,71 @@
     position: absolute;
     width: 155px;
     height: 47px;
-    top: 45px;
+    top: 48px;
     left: 322px;
+    font-size: 40px;
+    color:black;
+    font-weight: 800;
+    text-decoration: none;
+    font-family: var(--font-AbhayaLibre-ExtraBold);
+  }
+
+  .Purple {
+    color:#7000D8;
   }
   
   .Question {
     position: absolute;
     width: 116px;
     height: 29px;
-    top: 45px;
+    top: 57px;
     left: 578px;
+    color:black;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: var(--font-AbhayaLibre-ExtraBold);
   }
   
   .Bucketlist {
     position: absolute;
     width: 143px;
     height: 29px;
-    top: 45px;
+    top: 57px;
     left: 749px;
+    color:black;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: var(--font-AbhayaLibre-ExtraBold);
   }
   
   .Community {
     position: absolute;
     width: 140px;
     height: 29px;
-    top: 45px;
+    top: 57px;
     left: 947px;
+    color:black;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: var(--font-AbhayaLibre-ExtraBold);
   }
   
   .Signin {
     position: absolute;
     width: 116px;
     height: 38px;
-    top: 45px;
+    top: 52px;
     left: 1351px;
+    font-family: var(--font-AbhayaLibre-ExtraBold);
   }
 
   .Signup {
     position: absolute;
     width: 116px;
     height: 38px;
-    top: 45px;
+    top: 52px;
     left: 1482px;
+    font-family: var(--font-AbhayaLibre-ExtraBold);
   }
 
   .Navbar{
