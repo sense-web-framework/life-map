@@ -2,9 +2,14 @@ import './App.css';
 import './NavBar.js';
 import Main from './Main.js';
 import SignUp from './SignUp';
+<<<<<<< Updated upstream
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 
 /*function App() {
+=======
+import Community from './Community/Community_page';
+function App() {
+>>>>>>> Stashed changes
   return (
     <div className="App">
       <Main/>

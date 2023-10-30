@@ -1,0 +1,262 @@
+.Commnunity_page{
+    position: absolute;
+    width: 116px;
+    height: 38px;
+    top: 45px;
+    left: 1482px;
+  }
+  .banner{
+    background-image: url(../img/질문이미지.png);
+    width: 1920px;
+    height: 249px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* 핵심코드 */
+    position: relative; /* 핵심코드 */
+  }
+  .banner_txt{
+    position: absolute; /* 핵심코드 */
+    width: 239px;
+    height: 47.46px;
+    flex-shrink: 0;
+    top: 50%; 
+    left: 50%;
+    transform: translate( -50%, -50%); /* 핵심코드 */
+    font-size: x-large;
+    color: #FFF;
+    text-align: center;
+    font-family: Arimo;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  @font-face {
+    font-family: Arimo;
+    src: url("../fonts/KoPub Dotum_Pro Bold.otf");
+  }
+  @font-face {
+    font-family: Abhaya Libre ExtraBold;
+    src: url("../fonts/AbhayaLibre-ExtraBold.ttf");
+  }
+  .B_title{
+    position: absolute;
+    width: 210px;
+    height: 47px;
+    top:552px;
+    left: 864px;
+    color: #000;  
+    text-align: center;
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .search_form{
+    border-style: none;
+    border-radius: 21.5px;
+    background: #D9D9D9;
+    position: absolute;
+    width: 440px;
+    height: 43px;
+    flex-shrink: 0;
+    top: 163px;
+    left: 740px;
+    font-size: 15px;
+    text-align: center;
+  }
+  /* #input-group button{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    top: 10px;
+    left: 400px;
+  } */
+  .hashtags-title{ 
+  position: absolute;
+  width: 306px;
+  height: 29px;
+  top: 740px;
+  left: 293px;
+  color: #000;
+  text-align: center;
+  font-family: Abhaya Libre ExtraBold;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.hashtags ul{
+  list-style: none;
+}
+/* .hashtags li {
+  float: left;
+  width: 388px;
+  height: 95px;
+  margin-right: 75px;
+} */
+.r{
+  list-style: none;
+  position: relative;
+  float: left;
+  width: 388px;
+  height: 95px;
+  top:350px;
+  left: 280px;
+  margin-right: 75px;
+  text-align: left;
+  color: #000;
+  /* font-family: Atkinson Hyperlegible; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.r p{
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arimo;
+
+}
+.mostLiked-title{
+  position: relative;
+  width: 284px;
+  height: 28px;
+  font-family: Abhaya Libre ExtraBold;
+  font-size: 25px;
+  font-weight: 800;
+  top: 613px;
+  left: 253px;
+}
+.read-more{
+  position: absolute;
+  background-image: url(../img/arrow-right.png);
+  background-color: #FFF;
+  border: none;
+  width: 24px;
+  height: 24px;
+  top: 1200px;
+  left: 530px;
+}
+.mostLiked-group{
+  position: absolute;
+}
+.user1{
+  position: absolute;
+  top: 1220px;
+  left: 293px;
+  width: 432px;
+  height: 331px;
+}
+.user2{
+  position: absolute;
+  top: 1220px;
+  left: 774px;
+  width: 432px;
+  height: 331px;
+}
+.user3{
+  position: absolute;
+  top: 1220px;
+  left: 1225px;
+  width: 432px;
+  height: 331px;
+}
+.user-icon{
+  position: relative;
+  background-image: url(../img/프로필1.png);
+  width: 45px;
+  height: 45px;
+  top: 53px;
+  left: 23px;
+}
+.user-name{
+  position: absolute;
+  top: 65px;
+  left: 85px;
+  /* position: relative;
+  width: 48px;
+  height: 23px;
+  left: 84px; */
+  color: #000;
+  text-align: center;
+  font-family: Arimo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.title{
+  position: absolute;
+  width: 344px;
+  height: 29px;
+  top: 100px;
+  left: 15px;
+  font-size: 25px;
+  font-weight: 800;
+  /* font-family: Abhaya Libre ExtraBold;  */
+  font-style: bold;
+  line-height: normal;
+  text-align: left;
+}
+.hashtag li{
+  list-style: none;
+  position: relative;
+  float: left;
+  margin-right: 15px;
+  width: 80px;
+  top: 100px;
+  left: 21px;
+}
+.content{
+  position: absolute;
+  width: 305px;
+  height: 78px;
+  top: 175px;
+  left: 15px;
+  color: #000;
+  /* font-family: Arimo; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1.5;
+  }
+  .division-line{
+    position: absolute;
+    border-top: 1px solid #444444;
+    width: 360px;
+    top: 290px;
+  }
+  .liked{
+    position: absolute;
+    background-image: url(../img/Heart.png);
+    width: 25px;
+    height: 20px;
+    background-color: #FFF;
+    border: none;
+    left: 34px;
+    top: 320px;
+  }
+  .liked-count{
+    position: absolute;
+    width: 21px;
+    height: 17px;
+    left: 67px;
+    top: 320px;
+  }
