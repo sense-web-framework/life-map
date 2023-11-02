@@ -2,11 +2,15 @@
   text-align: center;
 }
 
-/*@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}*/
+.Main {
+  display: flex; 
+  min-height: 100vh; 
+  flex-direction: column;
+}
+
+.Body {
+  flex: 1;
+}
 
 .Sign-bg{
   background-image: url(./img/배경.png);
