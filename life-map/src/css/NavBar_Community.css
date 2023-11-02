@@ -25,6 +25,10 @@
     top:28px;
     right: 603px;
 }
+.NavBar_Commnunity {
+    top: 130px;
+    position: relative;
+}
 .navbar_nav{
     list-style:none;
     display: flex;
