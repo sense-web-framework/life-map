@@ -9,6 +9,7 @@
     background-image: url(../img/질문이미지.png);
     width: 1920px;
     height: 249px;
+    top: 130px;
     flex-shrink: 0;
     align-items: center;
     justify-content: center;

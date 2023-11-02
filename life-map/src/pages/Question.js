@@ -3,9 +3,9 @@ import '../css/Question.css';
 function Question() {
     return (
         <div className="QuestionPage">
-            <div className="banner">
-                <div className="banner-img">
-                    <div className="banner-text">
+            <div className="question-banner">
+                <div className="question-banner-img">
+                    <div className="question-banner-text">
                         <h6>QUESTION OF THE DAY</h6>
                         <h1>당신은 주변 사람들에게</h1>
                         <h1>어떤 사람으로 남고 싶은가요?</h1>
