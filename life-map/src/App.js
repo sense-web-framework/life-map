@@ -9,6 +9,7 @@ import Question from './pages/Question.js';
 import SignUp from './pages/SignUp.js';
 import SignIn from './pages/SignIn.js';
 import Footer from './pages/Footer.js';
+import BucketList from './pages/BucketList.js';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 
 /*function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<Main/>}></Route>
           <Route path="/main" element={<Main/>}></Route>
           <Route path="/question" element={<Question/>}></Route>
+          <Route path="/bucket-list" element={<BucketList/>}></Route>
           <Route path="/sign-up" element={<SignUp/>}></Route>
           <Route path="/sign-in" element={<SignIn/>}></Route>
           </Routes>
