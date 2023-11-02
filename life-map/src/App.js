@@ -11,6 +11,7 @@ import SignIn from './pages/SignIn.js';
 import Footer from './pages/Footer.js';
 import BucketList from './pages/BucketList.js';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
+import Community_page from './pages/Community_page';
 
 /*function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/bucket-list" element={<BucketList/>}></Route>
           <Route path="/sign-up" element={<SignUp/>}></Route>
           <Route path="/sign-in" element={<SignIn/>}></Route>
+          <Route path="/community" element={<Community_page></Community_page>}></Route>
           </Routes>
         </div>
         <Footer />

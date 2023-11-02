@@ -1,4 +1,4 @@
-import './Lounge_Board.css'
+import '../css/Lounge_Board.css'
 function Lounge_Board(){
     return(
         <div clasName="Lounge_Board">
