@@ -22,7 +22,10 @@
   justify-content: center;
   background-repeat: no-repeat;
 }
+
 .App-header {
+  position: absolute;
+  top: 130px;
   background-image: url(./img/메인.png);
   min-height: 894px;
   width: 1920px;
@@ -33,8 +36,43 @@
   background-repeat: no-repeat;
 }
 
+.App-header-title{
+  position: absolute;
+  width: 1038px;
+  height: 274px;
+  top: 338px;
+  left: 441px;
+  font-size: 130px;
+  text-align: center;
+  color:white;
+  font-weight: 800;
+  line-height: 153.36px;
+  font-family: var(--font-AbhayaLibre-ExtraBold);
+}
+
+.fontsize-80px{
+  font-size: 80px;
+  line-height: 94.38px;
+}
+
+.App-header-saying{
+  position: absolute;
+  width: 837px;
+  height: 43px;
+  top: 833px;
+  left: 542px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: var(--font-AbhayaLibre-Medium);
+  color: white;
+}
+
 .App-header2 {
-  background-image: url(./img/소개.png);
+  position: absolute;
+  top:130px;
   min-height: 480px;
   width: 1920px;
   display: flex;
@@ -44,8 +82,22 @@
   background-repeat: no-repeat;
 }
 
+.App-header2-introduce{
+  position: absolute;
+  width: 981px;
+  height: 167px;
+  top: 1050px;
+  left: 470px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47.19px;
+  letter-spacing: 0em;
+  text-align: center;
+  white-space: pre-line;
+  font-family: var(--font-KoPub-Dotum-Bold);
+}
+
 .App-header3 {
-  background-image: url(./img/질문메뉴소개.png);
   min-height: 894px;
   width: 1920px;
   display: flex;
@@ -53,10 +105,47 @@
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
+}
+
+.App-header3-question-title{
+  position: absolute;
+  width: 186px;
+  height: 47px;
+  top: 1604px;
+  left: 346px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: var(--font-AbhayaLibre-ExtraBold);
+  color:#7000D8;
+}
+
+.App-header3-question-text{
+  position: absolute;
+  width: 431px;
+  height: 257px;
+  top: 1696px;
+  left: 346px;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+  white-space: pre-line;
+  font-family: var(--font-KoPub-Dotum-Bold);
+}
+
+.App-header3-question-image{
+  position: absolute;
+  width: 616px;
+  height: 824px;
+  top: 1604px;
+  left: 958px
 }
 
 .App-header4 {
-  background-image: url(./img/버킷리스트메뉴소개.png);
   min-height: 894px;
   width: 1920px;
   display: flex;
@@ -64,10 +153,47 @@
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
+}
+
+.App-header4-bucketlist-image{
+  position: absolute;
+  width: 616px;
+  height: 824px;
+  top: 2694px;
+  left: 344px;
+}
+
+.App-header4-bucketlist-title{
+  position: absolute;
+  width: 227px;
+  height: 47px;
+  top: 2694px;
+  left: 1311px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: var(--font-AbhayaLibre-ExtraBold);
+  color:#7000D8;
+}
+
+.App-header4-bucketlist-text{
+  position: absolute;
+  width: 384px;
+  height: 167px;
+  top: 2786px;
+  left: 1154px;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: right;
+  white-space: pre-line;
+  font-family: var(--font-KoPub-Dotum-Bold);
 }
 
 .App-header5 {
-  background-image: url(./img/커뮤니티메뉴소개.png);
   min-height: 894px;
   width: 1920px;
   display: flex;
@@ -77,3 +203,40 @@
   background-repeat: no-repeat;
 }
 
+.App-header5-community-title{
+  position: absolute;
+  width: 223px;
+  height: 47px;
+  top: 3692px;
+  left: 346px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: var(--font-AbhayaLibre-ExtraBold);
+  color:#7000D8;
+}
+
+.App-header5-community-text{
+  position: absolute;
+  width: 372px;
+  height: 167px;
+  top: 3876px;
+  left: 346px;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: right;
+  white-space: pre-line;
+  font-family: var(--font-KoPub-Dotum-Bold);
+}
+
+.App-header5-community-image{
+  position: absolute;
+  width: 616px;
+  height: 824px;
+  top: 3692px;
+  left: 958px;
+}
