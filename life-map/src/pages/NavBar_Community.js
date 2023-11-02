@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/esm/Container";
 // import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import './NavBar_Community.css';
+import '../css/NavBar_Community.css';
 function NavBar_Commnuity(){
     return(
         <Navbar className="NavBar_Commnunity">
