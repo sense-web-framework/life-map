@@ -1,10 +1,13 @@
 import './App.css';
-import './NavBar.js';
-import Nav from './NavBar.js';
-import Main from './Main.js';
+import './pages/NavBar.js';
+import './css/Main.css';
+import './css/SignIn.css';
+import './css/SignUp.css';
+import Nav from './pages/NavBar.js';
+import Main from './pages/Main.js';
 import Question from './pages/Question.js';
-import SignUp from './SignUp.js';
-import SignIn from './SignIn.js';
+import SignUp from './pages/SignUp.js';
+import SignIn from './pages/SignIn.js';
 import Footer from './pages/Footer.js';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 

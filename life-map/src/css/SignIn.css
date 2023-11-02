@@ -1,0 +1,10 @@
+.Sign-bg{
+    background-image: url(/src/img/배경.png);
+    min-height: 894px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+  }

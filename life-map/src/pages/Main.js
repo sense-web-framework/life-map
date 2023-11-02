@@ -1,8 +1,7 @@
 import NavBar from './NavBar.js';
-import image from './img/이미지.png';
-import image1 from './img/이미지1.png';
-import image2 from './img/이미지2.png';
-import Footer from './pages/Footer.js';
+import image from '../img/이미지.png';
+import image1 from '../img/이미지1.png';
+import image2 from '../img/이미지2.png';
 
 function main(){
     return (
