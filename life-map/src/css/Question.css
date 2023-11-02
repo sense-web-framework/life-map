@@ -1,0 +1,65 @@
+.banner-img {
+    width: 100%;
+    height: 383px;
+    background-image: url(../img/question-image.jpg);
+    background-size: cover;
+    top: 130px;
+    position: relative;
+    display : inline-block;
+    max-width: 100%;
+}
+
+.banner-text {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    transform: translate( -50%, -50%);
+    font-size: x-large;
+}
+
+.banner-text h1 {
+    font-family: 'KoPub돋움체 Bold';
+    font-size: 50px;
+}
+
+.banner-text h6 {
+    font-family: 'AbhayaLibre-ExtraBold';
+    font-size: 25px;
+}
+
+.answer {
+    position: relative;
+    text-align: center;
+    top: 180px;
+}
+
+.answer-label h2 {
+    font-family: 'AbhayaLibre-ExtraBold';
+    font-size: 40px;
+    color: #7000D8;
+}
+
+.answer-form textarea {
+    width: 1100px;
+    height: 200px;
+    font-family: 'KoPub돋움체 Bold';
+    font-size: 20px;
+    padding: 25px;
+    margin: 30px;
+    resize: none;
+    overflow: hidden;
+}
+
+.answer-form input {
+    width: 175px;
+    height: 59px;
+    border-radius: 6px;
+    border: none;
+    background: #7000D8;
+    color: white;
+    font-family: 'AbhayaLibre-ExtraBold';
+    font-size: 30px;
+    flex-shrink: 0;
+}

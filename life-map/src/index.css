@@ -18,6 +18,11 @@ code {
 	src: url(./fonts/AbhayaLibre-ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: 'KoPub돋움체 Bold';
+    src: url(./fonts/KoPub_Dotum_Bold.ttf);
+}
+
 :root {
 	--font-AbhayaLibre-ExtraBold: "AbhayaLibre-ExtraBold";
 }
