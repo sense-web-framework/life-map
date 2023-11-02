@@ -14,11 +14,11 @@ function NavBar() {
       <Link className='Question' to={'/question'}>QUESTION</Link>
       <Link className='Bucketlist' to={'/bucket-list'}>BUCKETLIST</Link>
       <Link className='Community' to={'/community'}>COMMUNITY</Link>
-      <Link className='Signin' to={'/sign-in'}>
-      <button type="button" class="btn btn-dark">SIGN IN</button>
+      <Link to={'/sign-in'}>
+      <button type="button" className="Signin">SIGN IN</button>
       </Link>
-      <Link className='Signup' to={'/sign-up'}>
-      <button type="button" class="btn btn-dark">SIGN UP</button>
+      <Link to={'/sign-up'}>
+      <button type="button" className="Signup">SIGN UP</button>
       </Link>
     </div>
   );
