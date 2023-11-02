@@ -12,7 +12,7 @@ function NavBar() {
         AP
         </Link>
       <Link className='Question' to={'/question'}>QUESTION</Link>
-      <Link className='Bucketlist' to={'/bucketList'}>BUCKETLIST</Link>
+      <Link className='Bucketlist' to={'/bucket-list'}>BUCKETLIST</Link>
       <Link className='Community' to={'/community'}>COMMUNITY</Link>
       <Link className='Signin' to={'/sign-in'}>
       <button type="button" class="btn btn-dark">SIGN IN</button>
