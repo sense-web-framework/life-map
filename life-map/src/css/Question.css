@@ -30,6 +30,7 @@
 }
 
 .answer {
+    height: 700px;
     position: relative;
     text-align: center;
     top: 180px;
