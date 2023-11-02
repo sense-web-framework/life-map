@@ -26,10 +26,18 @@ code {
 }
 
 @font-face {
+  font-family: "AbhayaLibre-Medium";
+  src: url(./fonts/AbhayaLibre-Medium.ttf);
+}
+
+@font-face {
     font-family: 'KoPub돋움체 Bold';
     src: url(./fonts/KoPub_Dotum_Bold.ttf);
 }
 
 :root {
 	--font-AbhayaLibre-ExtraBold: "AbhayaLibre-ExtraBold";
+  --font-AbhayaLibre-Medium: "AbhayaLibre-Medium";
+  --font-KoPub-Dotum-Bold: "KoPub돋움체 Bold";
 }
+
