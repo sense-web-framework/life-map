@@ -57,6 +57,9 @@
     height: 38px;
     top: 52px;
     left: 1351px;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius:6px;
     font-family: var(--font-AbhayaLibre-ExtraBold);
   }
 
@@ -66,6 +69,9 @@
     height: 38px;
     top: 52px;
     left: 1482px;
+    background-color: #333333;
+    border-radius:6px;
+    color: white;
     font-family: var(--font-AbhayaLibre-ExtraBold);
   }
 

@@ -49,12 +49,6 @@
     position: absolute;
     top:130px;
     min-height: 480px;
-    width: 1920px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
   }
   
   .App-header2-introduce{
@@ -75,11 +69,6 @@
   .App-header3 {
     min-height: 894px;
     width: 1920px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
   }
   
   .App-header3-question-title{
@@ -122,12 +111,6 @@
   
   .App-header4 {
     min-height: 894px;
-    width: 1920px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
   }
   
   .App-header4-bucketlist-image{
@@ -170,12 +153,6 @@
   
   .App-header5 {
     min-height: 894px;
-    width: 1920px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
   }
   
   .App-header5-community-title{
