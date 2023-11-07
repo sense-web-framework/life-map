@@ -10,6 +10,7 @@ import SignUp from './pages/SignUp.js';
 import SignIn from './pages/SignIn.js';
 import Footer from './pages/Footer.js';
 import BucketList from './pages/BucketList.js';
+import QuestionAnswer from './pages/QuestionAnswer.js';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import Community_page from './pages/Community_page';
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp/>}></Route>
           <Route path="/sign-in" element={<SignIn/>}></Route>
           <Route path="/community" element={<Community_page></Community_page>}></Route>
+          <Route path="/question-answer" element={<QuestionAnswer />}></Route>
           </Routes>
         </div>
         <Footer />

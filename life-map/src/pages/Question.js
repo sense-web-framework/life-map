@@ -1,8 +1,15 @@
 import '../css/Question.css';
+import { useNavigate } from "react-router-dom";
 
 function Question() {
+    const navigate = useNavigate();
+
+    const navigateToAnswer = () => {
+        navigate("/question-answer");
+    };
+
     return (
-        <div className="QuestionPage">
+        <div className="question-page">
             <div className="question-banner">
                 <div className="question-banner-img">
                     <div className="question-banner-text">
@@ -12,14 +19,14 @@ function Question() {
                     </div>
                 </div>
             </div>
-            <div className="answer">
-                <div className="answer-label">
+            <div className="question-page-answer">
+                <div className="question-page-answer-label">
                     <h2>MAKE YOUR ANSWER</h2>
                 </div>
-                <div className="answer-form">
+                <div className="question-page-answer-form">
                     <form>
                         <textarea placeholder="당신의 답변을 입력해주세요." maxlength="300"></textarea><br/>
-                        <input type="submit" value="SUBMIT"/>
+                        <input type="submit" value="SUBMIT" onClick={navigateToAnswer}/>
                     </form>
                 </div>
             </div>
