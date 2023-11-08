@@ -1,13 +1,14 @@
-.Commnunity_page{
-    position: absolute;
-    width: 116px;
-    height: 38px;
-    top: 45px;
-    left: 1482px;
-  }
+@font-face {
+  font-family: Arimo;
+  src: url("../fonts/KoPub_Dotum_Pro_Bold.otf");
+}
+@font-face {
+  font-family: Abhaya Libre ExtraBold;
+  src: url("../fonts/AbhayaLibre-ExtraBold.ttf");
+}
   .banner{
     background-image: url(../img/질문이미지.png);
-    width: 1920px;
+    width: 100%;
     height: 249px;
     top: 130px;
     flex-shrink: 0;
@@ -35,20 +36,13 @@
     line-height: normal;
     text-transform: uppercase;
   }
-  @font-face {
-    font-family: Arimo;
-    src: url("../fonts/KoPub_Dotum_Pro_Bold.otf");
-  }
-  @font-face {
-    font-family: Abhaya Libre ExtraBold;
-    src: url("../fonts/AbhayaLibre-ExtraBold.ttf");
-  }
   .B_title{
     position: absolute;
     width: 210px;
     height: 47px;
     top:552px;
-    left: 864px;
+    left: 50%;
+    transform: translate( -50%, -50%); 
     color: #000;  
     text-align: center;
     font-family: Abhaya Libre ExtraBold;
@@ -59,15 +53,16 @@
     text-transform: uppercase;
   }
   .search_form{
+    position: absolute;
     border-style: none;
     border-radius: 21.5px;
     background: #D9D9D9;
-    position: absolute;
-    width: 440px;
+    width: 420px;
     height: 43px;
     flex-shrink: 0;
-    top: 163px;
-    left: 740px;
+    top: 340px;
+    left: 50%;
+    transform: translate( -50%, -50%); 
     font-size: 15px;
     text-align: center;
   }
@@ -84,7 +79,7 @@
   width: 306px;
   height: 29px;
   top: 740px;
-  left: 293px;
+  left: 18%;
   color: #000;
   text-align: center;
   font-family: Abhaya Libre ExtraBold;
@@ -94,23 +89,23 @@
   line-height: normal;
   text-transform: uppercase;
 }
-.hashtags ul{
-  list-style: none;
+.hashtags-group{
+  width: 1700px;
+  height: 100px;
 }
-/* .hashtags li {
-  float: left;
-  width: 388px;
-  height: 95px;
-  margin-right: 75px;
-} */
-.r{
+.hashtags ul{
+  position:relative;
+  list-style: none;  
+  left: 3%;
+}
+.hashtags-group li{
   list-style: none;
   position: relative;
   float: left;
   width: 388px;
   height: 95px;
-  top:350px;
-  left: 280px;
+  top:500px;
+  left: 19%;
   margin-right: 75px;
   text-align: left;
   color: #000;
@@ -121,57 +116,67 @@
   line-height: normal;
   text-transform: uppercase;
   line-height: 40px;
+  display: inline-block;
+  border-right: 1px solid #D9D9D9;;
+  padding-right: 10px; 
+  margin-right: 5%;
+  height: fit-content;
 }
-.r p{
-  position: absolute;
-  top: 0px;
-  left: 350px;
+.hashtags-group ul li:last-child {
+  border-right: none; /* 마지막 li 요소에는 세로 작대기를 표시하지 않음 */
+}
+.h{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 50%; /* 원하는 간격을 조절할 수 있습니다 */
   font-size: 20px;
-  font-weight: 400;
   font-family: Arimo;
-
+}
+.h span {
+  white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
 }
 .mostLiked-title{
-  position: relative;
+  position: absolute;
   width: 284px;
   height: 28px;
   font-family: Abhaya Libre ExtraBold;
   font-size: 25px;
   font-weight: 800;
-  top: 613px;
-  left: 253px;
+  top: 1100px;
+  left: 18%;
 }
 .read-more{
-  position: absolute;
+  position: relative;
   background-image: url(../img/arrow-right.png);
   background-color: #FFF;
   border: none;
   width: 24px;
   height: 24px;
-  top: 1200px;
-  left: 530px;
+  top: 4px;
+  left: 8%;
 }
-.mostLiked-group{
+/* .mostLiked-group{
   position: absolute;
-}
+} */
 .user1{
   position: absolute;
-  top: 1220px;
-  left: 293px;
+  top: 1150px;
+  left: 20%;
   width: 432px;
   height: 331px;
 }
 .user2{
   position: absolute;
-  top: 1220px;
-  left: 774px;
+  top: 1150px;
+  left: 45%;
   width: 432px;
   height: 331px;
 }
 .user3{
   position: absolute;
-  top: 1220px;
-  left: 1225px;
+  top: 1150px;
+  left: 70%;
   width: 432px;
   height: 331px;
 }
