@@ -35,9 +35,15 @@ code {
     src: url(./fonts/KoPub_Dotum_Bold.ttf);
 }
 
+@font-face {
+  font-family: 'Arimo-Medium';
+  src: url(./fonts/Arimo-Medium.ttf);
+}
+
 :root {
 	--font-AbhayaLibre-ExtraBold: "AbhayaLibre-ExtraBold";
   --font-AbhayaLibre-Medium: "AbhayaLibre-Medium";
   --font-KoPub-Dotum-Bold: "KoPub돋움체 Bold";
+  --font-Arimo-Medium: "Arimo-Medium";
 }
 
