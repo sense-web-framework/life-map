@@ -52,6 +52,20 @@
     font-family: var(--font-AbhayaLibre-ExtraBold);
   }
 
+  .signUp-box-alert {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    top: 250px;
+    left: 763px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: red;
+  }
+
   .signUp-box-id{
     position: absolute;
     width: 18px;
@@ -75,6 +89,38 @@
     border-radius: 6px;
     color: #171717;
     background-color: #767676;
+  }
+
+  .signUp-box-id-alert {
+    position: fixed;
+    width: 18px;
+    height: 20px;
+    top: 350px;
+    left: 763px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: red;
+  }
+
+  .signUp-box-id-ok {
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    top: 350px;
+    left: 763px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: green;
+  }
+
+  .signUp-box-id-input::placeholder{
+    color:#171717;
   }
 
   .signUp-box-password{
@@ -102,9 +148,41 @@
     background-color: #767676;
   }
 
+  .signUp-box-password-input::placeholder{
+    color:#171717;
+  }
+
+  .signUp-box-password-alert{
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    top: 458px;
+    left: 763px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: red;
+  }
+
+  .signUp-box-password-ok{
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    top: 458px;
+    left: 763px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: green;
+  }
+
   .signUp-box-confirm{
     position: absolute;
-    width: 183px;
+    width: 500px;
     height: 20px;
     top: 494px;
     left: 763px;
@@ -125,4 +203,36 @@
     border-radius: 6px;
     color: #171717;
     background-color: #767676;
+  }
+
+  .signUp-box-confirm-input::placeholder{
+    color:#171717;
+  }
+
+  .signUp-box-confirm-alert{
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    top: 564px;
+    left: 763px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: red;
+  }
+
+  .signUp-box-confirm-ok{
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    top: 564px;
+    left: 763px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: green;
   }

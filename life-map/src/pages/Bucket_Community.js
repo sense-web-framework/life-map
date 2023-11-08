@@ -16,27 +16,76 @@ function Bucket_Community(){
                 </div>
                 <div className="hashtags-group">
                     <ul>
-                    <li className="r">
-                        <li>#해시태그<p>1K</p></li>
-                        <li>#해시태그<p>1K</p></li>
-                        <li>#해시태그<p>1K</p></li></li>
-                    <li className="r">
-                        <li>#해시태그</li><p>1K</p>
-                        <li>#해시태그</li><p>1K</p>
-                        <li>#해시태그</li><p>1K</p></li>
-                    <li className="r">
-                        <li>#해시태그</li><p>1K</p>
-                        <li>#해시태그</li><p>1K</p>
-                        <li>#해시태그</li><p>1K</p></li>
+                        <li>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        <div class="h">
+                            <span>#해시태그</span>
+                            <span>1K</span>
+                        </div>
+                        </li>
                     </ul>
+             
+                    {/* {
+                        
+                    //  <ul>
+                    // <li className="r">
+                    //     <li>#해시태그<p>1K</p></li>
+                    //     <li>#해시태그<p>1K</p></li>
+                    //     <li>#해시태그<p>1K</p></li></li>
+                    // <li className="r">
+                    //     <li>#해시태그</li><p>1K</p>
+                    //     <li>#해시태그</li><p>1K</p>
+                    //     <li>#해시태그</li><p>1K</p></li>
+                    // <li className="r">
+                    //     <li>#해시태그<p> 1K</p></li>
+                    //     <li>#해시태그<p> 1K</p></li>
+                    //     <li>#해시태그<p> 1K</p></li></li>
+                    // </ul> 
+                    } */}
                 </div>
             </div>
             <div className="mostLiked">
                 <div className="mostLiked-title">
                     MOST LIKED BUCKET
-                </div>
-                <input type="button" className="read-more">
+                    <input type="button" className="read-more">
                 </input>
+                </div>
+                
                 {/* <div className="mostLiked-group">
                     <ul>
                         <li></li>

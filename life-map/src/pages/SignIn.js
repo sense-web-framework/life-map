@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import NavBar from './NavBar.js';
 
 function SignIn(){
+
+    
+    
     return (
         <div className="SignIn">
             <NavBar/>
@@ -8,9 +12,9 @@ function SignIn(){
                 <div className='signIn-box'>
                     <div className='signIn-box-title'>SIGN IN</div>
                     <div className='signIn-box-id'>ID</div>
-                    <input type='text' className='signIn-box-id-input'></input>
+                    <input type='id' className='signIn-box-id-input'></input>
                     <div className='signIn-box-password'>PASSWORD</div>
-                    <input type='text' className='signIn-box-password-input'></input>
+                    <input type='password' className='signIn-box-password-input'></input>
                     <button type="button" className='signIn-box-button'>SIGN IN</button>
                 </div>
             </div>
