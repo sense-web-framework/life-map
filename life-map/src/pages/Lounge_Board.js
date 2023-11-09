@@ -1,63 +1,86 @@
 import '../css/Lounge_Board.css'
+
 function Lounge_Board(){
     return(
         <div clasName="Lounge_Board">
-            <div className='oo'>HEllo</div>
-            <div class="board_list_wrap">
-                <div clasName="board_list">
-                    <div className="num">번호</div>
-                    <div className="title">제목</div>
-                    <div clasName="writer">작성자</div>
-                    <div clasName="date">등록일</div>
-                    <div clasName="count">조회수</div>
-                </div>
-                <div>
-                    <div class="num">5</div>
-                    <div className="title"><a href='#'>제목입니다</a></div>
-                    <div clasName="writer">유저</div>
-                    <div clasName="date">2023.10.09</div>
-                    <div clasName="count">10</div>
-                </div>
-                <div>
-                    <div class="num">4</div>
-                    <div className="title"><a href='#'>제목입니다</a></div>
-                    <div clasName="writer">유저</div>
-                    <div clasName="date">2023.10.09</div>
-                    <div clasName="count">10</div>
-                </div>
-                <div>
-                    <div class="num">3</div>
-                    <div className="title"><a href='#'>제목입니다</a></div>
-                    <div clasName="writer">유저</div>
-                    <div clasName="date">2023.10.09</div>
-                    <div clasName="count">10</div>
-                </div>
-                <div>
-                    <div class="num">2</div>
-                    <div className="title"><a href='#'>제목입니다</a></div>
-                    <div clasName="writer">유저</div>
-                    <div clasName="date">2023.10.09</div>
-                    <div clasName="count">10</div>
-                </div>
-                <div>
-                    <div class="num">1</div>
-                    <div className="title"><a href='#'>제목입니다</a></div>
-                    <div clasName="writer">유저</div>
-                    <div clasName="date">2023.10.09</div>
-                    <div clasName="count">10</div>
-                </div>
+            <div className="Board">			
+                <table>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>등록일</th>
+                        <th>조회수</th>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="subject">제목입니다</td>
+                        <td>유저</td>
+                        <td>2023.10.08</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="subject">제목입니다</td>
+                        <td>유저</td>
+                        <td>2023.10.08</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="subject">제목입니다</td>
+                        <td>유저</td>
+                        <td>2023.10.08</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="subject">제목입니다</td>
+                        <td>유저</td>
+                        <td>2023.10.08</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="subject">제목입니다</td>
+                        <td>유저</td>
+                        <td>2023.10.08</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="subject">제목입니다</td>
+                        <td>유저</td>
+                        <td>2023.10.08</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="subject">제목입니다</td>
+                        <td>유저</td>
+                        <td>2023.10.08</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="subject">제목입니다</td>
+                        <td>유저</td>
+                        <td>2023.10.08</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            <div class="paging">
+                <ul>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
             </div>
-            <div clasName="board_page">
-                <a href='#' clasName="num on">1</a>
-                <a href='#' clasName="num">2</a>
-                <a href='#' clasName="num">3</a>
-                <a href='#' clasName="num">4</a>
-                <a href='#' clasName="num">5</a>
-            </div>
-            <div clasName="board_btn">
-                <a href='#' clasName="write">글쓰기</a>
-            </div>
+            <input type="button" value="글쓰기" className="write_btn"></input>
         </div>
+    </div>
     );
 }
 export default Lounge_Board;

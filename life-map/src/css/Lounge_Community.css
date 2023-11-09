@@ -1,9 +1,14 @@
+@font-face {
+  font-family: Arimo;
+  src: url("../fonts/KoPub_Dotum_Pro_Bold.otf");
+}
 .L_title{
     position: absolute;
     width: 210px;
     height: 47px;
     top:552px;
-    left: 864px;
+    left: 50%;
+    transform: translate( -50%, -50%); 
     color: #000;  
     text-align: center;
     font-family: Abhaya Libre ExtraBold;
@@ -12,13 +17,13 @@
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
-  }
+    }
   .L_subtitle{
-    position: relative;
+    position: absolute;
     width: 280px;
     height: 29px;
-    top: 150px;
-    left: 840px;
+    top: 600px;
+    left: -195%;
     color: #000;
     text-align: center;
     font-family: Armio;
@@ -28,17 +33,35 @@
     line-height: normal;
     text-transform: uppercase;
   }
+  .L_input-group { 
+    position: relative;
+    display: inline-block; 
+    padding: 5px; border: solid 1px #ccc; 
+    background-color:#FFFFFF; 
+    font-size: 9pt; 
+    top: 680px;
+    left: 900%;
+  }
   .L_search_form{
-    position: absolute;
-    width: 189px;
-    height: 35px;
-    flex-shrink: 0;
-    left: 1334px;
-    top: 700px;
-    border: 1px solid ;
-    border-color:gray;
-    background: #FFF;
-    color: #909090;
+    width:189px;
+    height:25px;
+    border:none;
+    font-size:1em;
+    padding-left: 5px;
+    display:inline;
+    outline:none;
+    box-sizing: border-box;
     font-size: 15px;
-    
+    font-family: Armio;
+  }
+  .L_btn { 
+    position: absolute;
+    background-image: url(../img/magnify_2.png);
+    background-color:#FFFFFF; 
+    top: 5px;
+    right: 5px;
+    width: 24px; 
+    height: 24px;
+    padding: 6px;
+    border:none
   }

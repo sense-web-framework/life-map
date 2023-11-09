@@ -1,11 +1,84 @@
+@font-face {
+    font-family: Arimo;
+    src: url("../fonts/KoPub_Dotum_Pro_Bold.otf");
+  }
+ul,li {
+    list-style: none;
+        }
 
-.board_btn a{
-    display: inline;
-    width: 104px;
-    height: 14px;
-    color: #FFF;
+.Board{
+    position:absolute;
+    top: 1070px;
+    transform: translate( -50%, -50%); 
+    left: 50%;
 }
-.borad_list{
-    width: 100%;
-    border-top:2px solid #000;
+table {
+    width: 1350px;
+    height: 500px;
+    border-collapse: collapse;
+}
+table th {
+    padding: 14px 21px;
+    background: #F3F3F3;
+    color: black;
+    font-size: 15px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #ddd;
+}
+table td {
+    padding: 14px 21px;
+    color: #666;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 15px;
+    
+}
+ table tr:hover {
+    background: #eee;
+    cursor: pointer;
+}
+.subject {
+    width: 45%;
+    text-align: center;
+}
+.paging {
+    position: relative;
+    left: 20%;
+    padding: 20px 0;
+    width: 800px;
+    border-style: none;
+    background-color: white;
+    font-family: Arimo;
+}
+.paging>ul {
+    display: flex;
+    justify-content: center;
+}
+.paging>ul>li {
+    padding: 8px;
+    background: white;
+    border: 1px solid white;
+    font-size: 15px;
+    margin-left: 10px;
+    border:none;
+}
+.paging>ul>li:hover {
+    cursor: pointer;
+    background: white;
+    color: blue;
+}
+.active {
+    color:  #7000D8 !important;
+    /* color: #fff; */
+}
+.write_btn{
+    position: relative;
+    width: 116px;
+    height: 38px;
+    left: 45%;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
 }
