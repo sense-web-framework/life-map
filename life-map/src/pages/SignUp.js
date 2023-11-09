@@ -1,5 +1,9 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'
 import NavBar from './NavBar.js';
+import "firebase/auth"
+import { initializeApp } from 'firebase/app';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 
 function SignUp(){
     const [id, setId] = useState("");
@@ -11,6 +15,32 @@ function SignUp(){
     const [alertConfirmPassword, setAlertConfirmPassword] = useState("");
     const [okConfirmPassword, setOkConfirmPassword] = useState("");
     const [alert, setAlert] = useState("");
+    const [okId, setOkId] = useState("");
+    const navigate = useNavigate();
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyA6MmGJelK2ElKUJpLSVHpu5HxYb0ENs1Q",
+        authDomain: "life-map-aa36c.firebaseapp.com",
+        projectId: "life-map-aa36c",
+        storageBucket: "life-map-aa36c.appspot.com",
+        messagingSenderId: "1041889065341",
+        appId: "1:1041889065341:web:6ae5bc11874e2dc35bb414",
+        measurementId: "G-DKC1EQL4CB"
+      };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    const idChangeHandler = (e) => {
+        setId(e.target.value);
+        if (!e.target.value) {
+            setAlertId('아이디를 입력해주세요.');
+            setOkId('');
+        }  else {
+            setAlertId('');
+            setOkId('유효한 아이디입니다.');
+        } 
+    }
 
     const passwordChangeHandler = (e) => {
         setPassword(e.target.value);
@@ -40,11 +70,29 @@ function SignUp(){
         }  
     }
 
-    const SignUpHandler = () => {
-        if(!id || !password || !confirmPassword){
-            setAlert('모든 필드를 입력하세요.');
-        } else {
-            setAlert('');
+    const SignUpHandler = async() => {
+        try{
+            setAlert("");
+            const createId=await createUserWithEmailAndPassword(auth, id, password);
+            setId("");
+            setPassword("");
+            setConfirmPassword("");
+            navigate("/sign-in");
+
+        }catch(err){
+            if(err.code==='auth/email-already-in-use'){
+                setAlertId('이미 존재하는 계정입니다.');
+                setOkId('');
+            }else if(err.code==='auth/invalid-email'){
+                setAlertId('잘못된 이메일 주소입니다.');
+                setOkId('');
+            }
+
+            if(!id || !password || !confirmPassword){
+                setAlert('모든 필드를 입력하세요.');
+            } else {
+                setAlert('');
+            }
         }
     }
 
@@ -56,8 +104,9 @@ function SignUp(){
                     <div className='signUp-box-title'>SIGN UP</div>
                     <div className='signUp-box-alert'>{alert}</div>
                     <div className='signUp-box-id'>ID</div>
-                    <input type='text' placeholder="  Enter yout ID"value={id} className='signUp-box-id-input'></input>
+                    <input type='text' placeholder="  Enter your ID" value={id} onChange={idChangeHandler} className='signUp-box-id-input'></input>
                     <div className='signUp-box-id-alert'>{alertId}</div>
+                    <div className='signUp-box-id-ok'>{okId}</div>
                     <div className='signUp-box-password'>PASSWORD</div>
                     <input type='password' placeholder="  Enter your Password" value={password} onChange={passwordChangeHandler} className='signUp-box-password-input'></input>
                     <div className='signUp-box-password-alert'>{alertPassword}</div>

@@ -92,12 +92,12 @@
   }
 
   .signUp-box-id-alert {
-    position: fixed;
-    width: 18px;
+    position: absolute;
+    width: 300px;
     height: 20px;
-    top: 350px;
+    top: 352px;
     left: 763px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0em;
@@ -107,11 +107,11 @@
 
   .signUp-box-id-ok {
     position: absolute;
-    width: 18px;
+    width: 300px;
     height: 20px;
-    top: 350px;
+    top: 352px;
     left: 763px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0em;
