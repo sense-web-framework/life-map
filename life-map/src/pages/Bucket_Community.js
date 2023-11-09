@@ -2,13 +2,12 @@ function Bucket_Community(){
     return(
         <div className="Buket_Community">
             <div className="B_title">버킷리스트</div>
-            <div className="input-group">
+            <div className="B_input-group">
                 <input 
                     type="search"
-                    className="search_form"
-                    placeholder="해시태그로 검색하세요"
-                ></input>
-                {/* <button type="submit"></button> */}
+                    className="B_search_form"
+                    placeholder="해시태그로 검색하세요"/>
+                 <input type="button" value="" className="B_btn"></input>
             </div>
             <div className="hashtags">
                 <div className="hashtags-title">

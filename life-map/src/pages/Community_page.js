@@ -5,6 +5,7 @@ import '../css/Lounge_Community.css'
 import '../css/Lounge_Board.css'
 import Bucket_Community from './Bucket_Community.js';
 import Lounge_Community from './Lounge_Community.js';
+
 function Community_page(){
     return (
         <div className="Community_page">
@@ -15,8 +16,10 @@ function Community_page(){
                 </div>
             </div>
             <NavBar_Community></NavBar_Community>
-            <Bucket_Community></Bucket_Community>
-            {/* <Lounge_Community></Lounge_Community> */}
+            <div className='Community_body'>
+            </div>
+            {/* <Bucket_Community></Bucket_Community> */}
+            <Lounge_Community></Lounge_Community>
         </div>
     );
 }
