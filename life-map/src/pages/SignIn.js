@@ -45,7 +45,7 @@ function SignIn(){
 
     const SignInHandler = async () => {
         try {
-            await signInWithEmailAndPassword(auth, id, password);
+            const userData=await signInWithEmailAndPassword(auth, id, password);
             setAlertSignIn('');
             navigate('/main');
         } catch (error) {

@@ -38,7 +38,7 @@ function SignUp(){
             setOkId('');
         }  else {
             setAlertId('');
-            setOkId('유효한 아이디입니다.');
+            setOkId('');
         } 
     }
 
@@ -73,7 +73,7 @@ function SignUp(){
     const SignUpHandler = async() => {
         try{
             setAlert("");
-            const createId=await createUserWithEmailAndPassword(auth, id, password);
+            await createUserWithEmailAndPassword(auth, id, password);
             setId("");
             setPassword("");
             setConfirmPassword("");
