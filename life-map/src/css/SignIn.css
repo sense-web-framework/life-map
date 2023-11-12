@@ -33,6 +33,20 @@
     font-family: var(--font-AbhayaLibre-ExtraBold);
   }
 
+  .signIn-box-alert {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    top: 305px;
+    left: 763px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: red;
+  }
+
   .signIn-box-id{
     position: absolute;
     width: 18px;
@@ -58,6 +72,24 @@
     background-color: #767676;
   }
 
+  .signIn-box-id-alert {
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    top: 407px;
+    left: 749px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: red;
+  }
+
+  .signIn-box-id-input::placeholder{
+    color:#171717;
+  }
+
   .signIn-box-password{
     position: absolute;
     width: 98px;
@@ -81,6 +113,24 @@
     border-radius: 6px;
     color: #171717;
     background-color: #767676;
+  }
+
+  .signIn-box-password-alert {
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    top: 507px;
+    left: 749px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: red;
+  }
+
+  .signIn-box-password-input::placeholder{
+    color:#171717;
   }
 
   .signIn-box-button{
