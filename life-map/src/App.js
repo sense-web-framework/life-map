@@ -3,7 +3,7 @@ import './pages/NavBar.js';
 import './css/Main.css';
 import './css/SignIn.css';
 import './css/SignUp.css';
-import Nav from './pages/NavBar.js';
+import NavBar from './pages/NavBar.js';
 import Main from './pages/Main.js';
 import Question from './pages/Question.js';
 import SignUp from './pages/SignUp.js';
@@ -11,8 +11,10 @@ import SignIn from './pages/SignIn.js';
 import Footer from './pages/Footer.js';
 import BucketList from './pages/BucketList.js';
 import QuestionAnswer from './pages/QuestionAnswer.js';
+import MyPage from './pages/MyPage.js';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import Community_page from './pages/Community_page';
+import { useState } from 'react';
 
 /*function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
   return (
     <div className='Main'>
       <BrowserRouter>
-        <Nav />
+        <NavBar/>
         <div className='Body'>
           <Routes>
           <Route path="/" element={<Main/>}></Route>
@@ -34,7 +36,9 @@ function App() {
           <Route path="/question" element={<Question/>}></Route>
           <Route path="/bucket-list" element={<BucketList/>}></Route>
           <Route path="/sign-up" element={<SignUp/>}></Route>
-          <Route path="/sign-in" element={<SignIn/>}></Route>
+          <Route path="/sign-in" element={<SignIn/>}>
+          </Route>
+          <Route path="/my-page" element={<MyPage/>}/>
           <Route path="/community" element={<Community_page></Community_page>}></Route>
           <Route path="/question-answer" element={<QuestionAnswer />}></Route>
           </Routes>

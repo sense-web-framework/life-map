@@ -52,28 +52,40 @@
     line-height: normal;
     text-transform: uppercase;
   }
-  .search_form{
-    position: absolute;
-    border-style: none;
-    border-radius: 21.5px;
-    background: #D9D9D9;
-    width: 420px;
-    height: 43px;
-    flex-shrink: 0;
+  .B_input-group{
+    position: relative;
+    display: inline-block; 
     top: 340px;
     left: 50%;
-    transform: translate( -50%, -50%); 
-    font-size: 15px;
-    text-align: center;
   }
-  /* #input-group button{
-    position: absolute;
+  .B_search_form{
+    width:420px;
+    height:43px;
+    border-radius: 21.5px;
+    transform: translate( -50%, -50%);  
+    font-size:1em;
+    padding-left: 5px;
+    display:inline;
+    outline:none;
+    box-sizing: border-box;
+    border-style: none;
+    font-size: 15px;
+    font-family: Armio;
+    text-align: center;
+    background: #D9D9D9;
+  }
+  .B_btn{
+    position: relative;
+    background-image: url(../img/magnify.png);
     width: 24px;
     height: 24px;
-    flex-shrink: 0;
-    top: 10px;
-    left: 400px;
-  } */
+    top: -15px;
+    bottom: 0;
+    right: 250px;
+    padding: 6px;
+    border:none;
+    background-color:#D9D9D9;
+  }
   .hashtags-title{ 
   position: absolute;
   width: 306px;
@@ -104,7 +116,7 @@
   float: left;
   width: 388px;
   height: 95px;
-  top:500px;
+  top:470px;
   left: 19%;
   margin-right: 75px;
   text-align: left;
@@ -156,9 +168,6 @@
   top: 4px;
   left: 8%;
 }
-/* .mostLiked-group{
-  position: absolute;
-} */
 .user1{
   position: absolute;
   top: 1150px;

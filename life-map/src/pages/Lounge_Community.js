@@ -5,11 +5,14 @@ function Lounge_Community(){
         <div className="Lounge_Community">
             <div className="L_title">라운지</div>
             <div className="L_subtitle">자유롭게 소통하는 공간</div>
-            <input 
-                type="search"
-                className="L_search_form"
-                placeholder=" 검색어"
-            ></input>
+            <div className="L_input-group">
+                <input 
+                    type="search"
+                    className="L_search_form"
+                    placeholder=" 검색어"
+                ></input>
+                <input type="button" value="" className="L_btn"></input>
+            </div>
             {/* <div className="L-board">
                 
             </div> */}
