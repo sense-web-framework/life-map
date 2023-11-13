@@ -6,8 +6,8 @@ function NavBar_Commnuity(){
         <div className="NavBar_Commnunity">
             <div class="navbar_nav">
                 <Link className='nav_Bucket_Community' to={'/community/bucket_community'}>버킷리스트</Link>
-                <Link className='nav_Lounge_Community' to={'/community/bucket_lounge'}>라운지</Link>
-                <Link className='nav_Together_Community' to={'/community/bucket_together'}>함께해요</Link>
+                <Link className='nav_Lounge_Community' to={'/community/lounge_community'}>라운지</Link>
+                <Link className='nav_Together_Community' to={'/community/together_community'}>함께해요</Link>
             </div>
         </div>
     );

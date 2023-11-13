@@ -1,8 +1,10 @@
 import Lounge_Board from "./Lounge_Board.js";
+import Community_page from "./Community_page.js";
 import '../css/Lounge_Community.css'
 function Lounge_Community(){
     return(
         <div className="Lounge_Community">
+            <Community_page></Community_page>
             <div className="L_title">라운지</div>
             <div className="L_subtitle">자유롭게 소통하는 공간</div>
             <div className="L_input-group">
