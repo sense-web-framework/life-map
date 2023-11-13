@@ -1,17 +1,3 @@
-@font-face {
-    font-family: Abhaya Libre ExtraBold;
-    src: url("../fonts/AbhayaLibre-ExtraBold.ttf");
-}
-
-@font-face {
-    font-family: Abhaya Libre SemiBold;
-    src: url("../fonts/AbhayaLibre-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: Abhaya Libre Mediums;
-    src: url("../fonts/AbhayaLibre-Medium.ttf");
-}
 
 .List{
     display: block;
@@ -30,7 +16,7 @@
     height: 47px;
     top: 0px;
     left: 0px;
-    font-family: Abhaya Libre ExtraBold;
+    font-family: 'AbhayaLibre-ExtraBold';
     font-size: 40px;
 }
 
@@ -50,7 +36,7 @@
     height: 607px;
     top: 90px;
     left: 0px;
-    font-family: Abhaya Libre SemiBold;
+    font-family: "AbhayaLibre-SemiBold";
     font-size: 15px;
 }
 
@@ -78,7 +64,7 @@
     width: 160px;
     top: 0px;
     left: 0px;
-    font-family: Abhaya Libre ExtraBold;
+    font-family: 'AbhayaLibre-ExtraBold';
     font-size: 40px;
 }
 
@@ -101,7 +87,7 @@
     height: 18px;
     top: 15px;
     left: 11px;
-    font-family: Abhaya Libre ExtraBold;
+    font-family: 'AbhayaLibre-ExtraBold';
     font-size: 15px;
 }
 
@@ -120,7 +106,7 @@
     height: 12px;
     top: 15px;
     left: 128px;
-    font-family: Abhaya Libre ExtraBold;
+    font-family: 'AbhayaLibre-ExtraBold';
     font-size: 10px;
 }
 
@@ -143,6 +129,7 @@
     height: 29px;
     top: 42px;
     left: 95px;
+    font-family: 'AbhayaLibre-ExtraBold';
     font-size: 24px;
     border: none;
 }
@@ -151,7 +138,7 @@
     position: absolute;
     top: 15%;
     left: 70%;
-    width: 25px;
+    width: 30px;
     height: 20px;
     border: none;
     background: url("../img/Heart.png");
@@ -184,6 +171,7 @@
     width: 632px;
     top: 140px;
     left: 48px;
+    font-family: "AbhayaLibre-Medium";
     font-size: 13px;
     border: none;
     resize: none;
