@@ -1,5 +1,5 @@
 import Lounge_Board from "./Lounge_Board.js";
-
+import '../css/Lounge_Community.css'
 function Lounge_Community(){
     return(
         <div className="Lounge_Community">
@@ -7,7 +7,7 @@ function Lounge_Community(){
             <div className="L_subtitle">자유롭게 소통하는 공간</div>
             <div className="L_input-group">
                 <input 
-                    type="search"
+                    type="text"
                     className="L_search_form"
                     placeholder=" 검색어"
                 ></input>

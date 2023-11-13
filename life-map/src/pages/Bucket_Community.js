@@ -4,7 +4,7 @@ function Bucket_Community(){
             <div className="B_title">버킷리스트</div>
             <div className="B_input-group">
                 <input 
-                    type="search"
+                    type="text"
                     className="B_search_form"
                     placeholder="해시태그로 검색하세요"/>
                  <input type="button" value="" className="B_btn"></input>
