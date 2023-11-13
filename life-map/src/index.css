@@ -26,8 +26,13 @@ code {
 }
 
 @font-face {
+	font-family: "AbhayaLibre-SemiBold";
+	src: url(./fonts/AbhayaLibre-SemiBold.ttf);
+}
+
+@font-face {
   font-family: "AbhayaLibre-Medium";
-  src: url(./fonts/AbhayaLibre-Medium.ttf);
+  src: url(./fonts/AbhayaLibre-SemiBold.ttf);
 }
 
 @font-face {
@@ -42,6 +47,7 @@ code {
 
 :root {
 	--font-AbhayaLibre-ExtraBold: "AbhayaLibre-ExtraBold";
+  --font-AbhayaLibre-SemiBold: "AbhayaLibre-SemiBold";
   --font-AbhayaLibre-Medium: "AbhayaLibre-Medium";
   --font-KoPub-Dotum-Bold: "KoPub돋움체 Bold";
   --font-Arimo-Medium: "Arimo-Medium";
