@@ -1,8 +1,10 @@
 import '../css/Together_Community.css'
+import Community_page from './Community_page';
 import Together_Board from './Together_Board';
 function Together_Community(){
     return(
         <div className="Together_Community">
+            <Community_page></Community_page>
           <div className="T_title">함께해요</div>  
           <div className="T_input-group">
                 <input 

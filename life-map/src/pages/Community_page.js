@@ -20,7 +20,7 @@ function Community_page(){
             </div>
             {/* <Bucket_Community></Bucket_Community> */}
             {/* <Lounge_Community></Lounge_Community> */}
-            <Togther_Community></Togther_Community>
+            {/* <Togther_Community></Togther_Community> */}
         </div>
     );
 }

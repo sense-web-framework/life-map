@@ -1,6 +1,8 @@
+import Community_page from "./Community_page";
 function Bucket_Community(){
     return(
         <div className="Buket_Community">
+            <Community_page></Community_page>
             <div className="B_title">버킷리스트</div>
             <div className="B_input-group">
                 <input 
