@@ -1,7 +1,9 @@
 import NavBar from './NavBar.js';
 import '../css/BucketList.css'
+import TextareaAutosize from 'react-textarea-autosize'
 
 function BucketList() {
+
     return(
         <div className="BucketList">
             <NavBar></NavBar>
@@ -30,10 +32,11 @@ function BucketList() {
                     <p className="p_Private">나만보기</p>
                 </div>
                 <div className="Content">
-                    <div className="Title">여행가기</div>
+                    <input type="text" className="Title" placeholder="제목입력"></input>
+                    <input type="button" className="Heart"></input>
                     <div className="title_underline"></div>
-                    <textarea className="HashTag"></textarea>
-                    <textarea className="Textarea"></textarea>   
+                    <input type="text" className="HashTag" placeholder="해시태그"></input>
+                    <TextareaAutosize className="Textarea" placeholder="버킷리스트를 작성해주세요" rows={1}></TextareaAutosize>   
                 </div>
             </div>
         </div>
