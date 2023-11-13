@@ -2,7 +2,7 @@
     font-family: nav;
     src: url("../fonts/KoPub_Dotum_Pro_Bold.otf");
 }
-.Bucket_Community{
+.nav_Bucket_Community{
     font-family: nav;
     color: #7000D8;
     position:absolute;
@@ -14,7 +14,7 @@
     text-align:center;
     text-decoration: none;
 }
-.Lounge_Community{
+.nav_Lounge_Community{
     font-family: nav;
     color: #000;
     position:absolute;
@@ -26,7 +26,7 @@
     text-align:center;
     text-decoration: none;
 }
-.Together_Community{
+.nav_Together_Community{
     font-family: nav;
     color: #000;
     position:absolute;

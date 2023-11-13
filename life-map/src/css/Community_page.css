@@ -36,11 +36,14 @@
     line-height: normal;
     text-transform: uppercase;
   }
+  .Buket_Community{
+    position:static;
+  }
   .B_title{
-    position: absolute;
+    position: relative;
     width: 210px;
     height: 47px;
-    top:552px;
+    top: 245px;
     left: 50%;
     transform: translate( -50%, -50%); 
     color: #000;  
@@ -55,7 +58,7 @@
   .B_input-group{
     position: relative;
     display: inline-block; 
-    top: 340px;
+    top: 300px;
     left: 50%;
   }
   .B_search_form{

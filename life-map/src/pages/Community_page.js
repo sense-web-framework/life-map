@@ -2,9 +2,9 @@ import NavBar from './NavBar.js';
 import NavBar_Community from './NavBar_Community.js';
 import '../css/Community_page.css';   
 import '../css/Lounge_Community.css'
-import '../css/Lounge_Board.css'
 import Bucket_Community from './Bucket_Community.js';
 import Lounge_Community from './Lounge_Community.js';
+import Togther_Community from './Together_Community.js';
 
 function Community_page(){
     return (
@@ -19,7 +19,8 @@ function Community_page(){
             <div className='Community_body'>
             </div>
             {/* <Bucket_Community></Bucket_Community> */}
-            <Lounge_Community></Lounge_Community>
+            {/* <Lounge_Community></Lounge_Community> */}
+            <Togther_Community></Togther_Community>
         </div>
     );
 }
