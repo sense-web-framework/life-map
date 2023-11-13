@@ -18,8 +18,8 @@
     position: absolute;
     width: 420px;
     height: 697px;
-    top: 88px;
-    left: 325px;
+    top: 15%;
+    left: 20%;
     border: 1px;
 }
 
@@ -66,8 +66,8 @@
     position: absolute;
     width: 735px;
     height: 433px;
-    top: 88px;
-    left: 857px;
+    top: 15%;
+    left: 50%;
     border: 1px;
 }
 
@@ -143,8 +143,18 @@
     height: 29px;
     top: 42px;
     left: 95px;
-    font-family: Abhaya Libre ExtraBold;
     font-size: 24px;
+    border: none;
+}
+
+.Heart{
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    width: 25px;
+    height: 20px;
+    border: none;
+    background: url("../img/Heart.png");
 }
 
 .title_underline{
@@ -162,18 +172,20 @@
     height: 15px;
     top: 108px;
     left: 64px;
-    font-family: Abhaya Libre SemiBold;
+    font-weight: bold;
     font-size: 13px;
     border: none;
+    resize: none;
+    overflow: hidden;
 }
 
 .Textarea{
     position: absolute;
     width: 632px;
-    height: 135px;
     top: 140px;
     left: 48px;
-    font-family: Abhaya Libre Mediums;
     font-size: 13px;
     border: none;
+    resize: none;
+    overflow: hidden;
 }
