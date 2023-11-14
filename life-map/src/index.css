@@ -44,7 +44,10 @@ code {
   font-family: 'Arimo-Medium';
   src: url(./fonts/Arimo-Medium.ttf);
 }
-
+@font-face {
+  font-family: 'KoPub Dotum_Pro Medium';
+  src: url(./fonts/KoPub_Dotum_Pro_Medium.otf);
+}
 :root {
 	--font-AbhayaLibre-ExtraBold: "AbhayaLibre-ExtraBold";
   --font-AbhayaLibre-SemiBold: "AbhayaLibre-SemiBold";

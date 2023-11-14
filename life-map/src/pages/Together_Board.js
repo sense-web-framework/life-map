@@ -1,4 +1,5 @@
 import '../css/Together_Board.css'
+import {Link} from 'react-router-dom';
 function Together_Board(){
     return(
         <div className="Together_Board">
@@ -77,7 +78,13 @@ function Together_Board(){
                     <li>4</li>
                     <li>5</li>
                 </ul>
-            </div>
+                </div>
+                <Link to={"/community/together_community/add_Together"}>
+                    <input 
+                        type="button"
+                        value="새로 만들기"
+                        className="write_btn"></input>
+                </Link>
             </div>
         </div>
     )
