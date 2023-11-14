@@ -11,11 +11,11 @@ import SignIn from './pages/SignIn.js';
 import Footer from './pages/Footer.js';
 import BucketList from './pages/BucketList.js';
 import MyPage from './pages/MyPage.js';
-import Bucket_Community from './pages/Bucket_Community.js';
-import Lounge_Community from './pages/Lounge_Community.js';
-import Together_Community from './pages/Together_Community.js';
+import BucketCommunity from './pages/Bucket_Community.js';
+import LoungeCommunity from './pages/Lounge_Community.js';
+import TogetherCommunity from './pages/Together_Community.js';
+import AddTogether from './pages/Add_Together.js';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
-import Community_page from './pages/Community_page';
 import { useState, useEffect } from 'react';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
@@ -55,10 +55,11 @@ function App() {
           <Route path="/sign-in" element={<SignIn/>}>
           </Route>
           <Route path="/my-page" element={<MyPage/>}/>
-          <Route path="/community" element={<Bucket_Community></Bucket_Community>}></Route>
-          <Route path="/community/bucket_community" element={<Bucket_Community></Bucket_Community>}></Route>
-          <Route path="/community/lounge_community" element={<Lounge_Community></Lounge_Community>}></Route>
-          <Route path="/community/together_community" element={<Together_Community></Together_Community>}></Route>
+          <Route path="/community" element={<BucketCommunity/>}></Route>
+          <Route path="/community/bucket_community" element={<BucketCommunity/>}></Route>
+          <Route path="/community/lounge_community" element={<LoungeCommunity/>}></Route>
+          <Route path="/community/together_community" element={<TogetherCommunity/>}></Route>
+          <Route path="/community/together_community/add_Together" element={<AddTogether/>}></Route>
           </Routes>
         </div>
         <Footer />
