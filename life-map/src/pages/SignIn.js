@@ -11,6 +11,7 @@ function SignIn(){
     const [alertPassword, setAlertPassword] = useState("");
     const [alertSignIn, setAlertSignIn] = useState("");
     const navigate = useNavigate();
+    const [user, setUser] = useState("");
 
     const firebaseConfig = {
         apiKey: "AIzaSyA6MmGJelK2ElKUJpLSVHpu5HxYb0ENs1Q",
@@ -46,6 +47,7 @@ function SignIn(){
     const SignInHandler = async () => {
         try {
             const userData=await signInWithEmailAndPassword(auth, id, password);
+            setUser(userData);
             setAlertSignIn('');
             navigate('/main');
         } catch (error) {
@@ -56,7 +58,7 @@ function SignIn(){
     
     return (
         <div className="SignIn">
-            <NavBar/>
+            <NavBar user={user}/>
             <div className='Sign-bg'>
                 <div className='signIn-box'>
                     <div className='signIn-box-title'>SIGN IN</div>

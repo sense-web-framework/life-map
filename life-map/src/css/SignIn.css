@@ -1,8 +1,9 @@
 .Sign-bg{
     background-image: url(/src/img/배경.png);
     min-height: 894px;
-    width: 1920px;
-    display: flex;
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -10,10 +11,12 @@
   }
 
   .signIn-box{
+    position: absolute;
     width: 570px;
     height: 449px;
-    top: 222px;
-    left: 662px;
+    top: 390px;
+    left: 50%;
+    transform: translate( -50%, -50%);
     border-radius: 17px;
     background-color: black;
   }
@@ -22,8 +25,9 @@
     position: absolute;
     width: 143px;
     height: 47px;
-    top: 263px;
-    left: 876px;
+    top: 65px;
+    left: 50%;
+    transform: translate( -50%, -50%);
     font-size: 40px;
     font-weight: 800;
     line-height: 47px;
@@ -37,8 +41,9 @@
     position: absolute;
     width: 400px;
     height: 20px;
-    top: 305px;
-    left: 763px;
+    top: 95px;
+    left: 50%;
+    transform: translate( -50%, -50%);
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -51,8 +56,9 @@
     position: absolute;
     width: 18px;
     height: 20px;
-    top: 337px;
-    left: 750px;
+    top: 128px;
+    left: 18%;
+    transform: translate( -50%, -50%);
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
@@ -65,8 +71,9 @@
     position: absolute;
     width: 397px;
     height: 40px;
-    top: 362px;
-    left: 749px;
+    top: 165px;
+    left: 50%;
+    transform: translate( -50%, -50%);
     border-radius: 6px;
     color: #171717;
     background-color: #767676;
@@ -76,8 +83,9 @@
     position: absolute;
     width: 300px;
     height: 20px;
-    top: 407px;
-    left: 749px;
+    top: 200px;
+    left: 42%;
+    transform: translate( -50%, -50%);
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;
@@ -94,8 +102,9 @@
     position: absolute;
     width: 98px;
     height: 20px;
-    top: 437px;
-    left: 750px;
+    top: 240px;
+    left: 25%;
+    transform: translate( -50%, -50%);
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
@@ -108,8 +117,9 @@
     position: absolute;
     width: 397px;
     height: 40px;
-    top: 462px;
-    left: 749px;
+    top: 279px;
+    left: 50%;
+    transform: translate( -50%, -50%);
     border-radius: 6px;
     color: #171717;
     background-color: #767676;
@@ -119,8 +129,9 @@
     position: absolute;
     width: 300px;
     height: 20px;
-    top: 507px;
-    left: 749px;
+    top: 315px;
+    left: 42%;
+    transform: translate( -50%, -50%);
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;
@@ -137,8 +148,9 @@
     position: absolute;
     width: 397px;
     height: 40px;
-    top: 556px;
-    left: 749px;
+    top: 390px;
+    left: 50%;
+    transform: translate( -50%, -50%);
     border-radius: 6px;
     color:white;
     background-color: #7000D8;

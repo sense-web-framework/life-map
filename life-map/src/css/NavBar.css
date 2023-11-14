@@ -3,7 +3,7 @@
     width: 155px;
     height: 47px;
     top: 48px;
-    left: 322px;
+    left: 15%;
     font-size: 40px;
     color:black;
     font-weight: 800;
@@ -20,7 +20,7 @@
     width: 116px;
     height: 29px;
     top: 57px;
-    left: 578px;
+    left: 30%;
     color:black;
     font-size: 25px;
     text-decoration: none;
@@ -32,7 +32,7 @@
     width: 143px;
     height: 29px;
     top: 57px;
-    left: 749px;
+    left: 40%;
     color:black;
     font-size: 25px;
     text-decoration: none;
@@ -44,7 +44,7 @@
     width: 140px;
     height: 29px;
     top: 57px;
-    left: 947px;
+    left: 50%;
     color:black;
     font-size: 25px;
     text-decoration: none;
@@ -56,7 +56,7 @@
     width: 116px;
     height: 38px;
     top: 52px;
-    left: 1351px;
+    left: 70%;
     color: #FFFFFF;
     background-color: #333333;
     border-radius:6px;
@@ -68,7 +68,31 @@
     width: 116px;
     height: 38px;
     top: 52px;
-    left: 1482px;
+    left: 78%;
+    background-color: #333333;
+    border-radius:6px;
+    color: white;
+    font-family: var(--font-AbhayaLibre-ExtraBold);
+  }
+
+  .MyPage {
+    position: absolute;
+    width: 116px;
+    height: 38px;
+    top: 52px;
+    left: 70%;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius:6px;
+    font-family: var(--font-AbhayaLibre-ExtraBold);
+  }
+
+  .SignOut {
+    position: absolute;
+    width: 116px;
+    height: 38px;
+    top: 52px;
+    left: 78%;
     background-color: #333333;
     border-radius:6px;
     color: white;
@@ -78,7 +102,7 @@
   .Navbar{
     position: absolute;
     height:130px;
-    width:1920px;
+    width:100%;
     background-color: white;
   }
   
