@@ -16,7 +16,8 @@ import Lounge_Community from './pages/Lounge_Community.js';
 import Together_Community from './pages/Together_Community.js';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import Community_page from './pages/Community_page';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 /*function App() {
   return (
@@ -27,10 +28,23 @@ import { useState } from 'react';
 }*/
 
 function App() {
+
+  const [user, setUser] = useState("");
+
+  useEffect(() => {
+    const auth = getAuth();
+
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   return (
     <div className='Main'>
       <BrowserRouter>
-        <NavBar/>
+        <NavBar user={user}/>
         <div className='Body'>
           <Routes>
           <Route path="/" element={<Main/>}></Route>
