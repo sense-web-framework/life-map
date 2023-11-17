@@ -91,10 +91,10 @@
   }
   .hashtags-title{ 
   position: absolute;
-  width: 306px;
+  width: 406px;
   height: 29px;
-  top: 740px;
-  left: 18%;
+  top: 770px;
+  left: 16%;
   color: #000;
   text-align: center;
   font-family: Abhaya Libre ExtraBold;
@@ -105,6 +105,7 @@
   text-transform: uppercase;
 }
 .hashtags-group{
+  position: relative;
   width: 1700px;
   height: 100px;
 }
