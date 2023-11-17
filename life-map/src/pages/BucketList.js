@@ -32,7 +32,7 @@ function BucketList() {
                     <div className="Heart"><LikeButton></LikeButton></div>
                     <div className="title_underline"></div>
                     <input type="text" className="HashTag" placeholder="해시태그"></input>
-                    <TextareaAutosize className="Textarea" placeholder="버킷리스트를 작성해주세요" rows={1}></TextareaAutosize>   
+                    <TextareaAutosize className="Textarea" placeholder="버킷리스트를 작성해주세요" rows={1}></TextareaAutosize> 
                 </div>
             </div>
         </div>
