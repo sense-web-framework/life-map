@@ -7,11 +7,13 @@ function NavBar({user}) {
   console.log('User in NavBar:', user);
 
   const SignOut = async () => {
-    const auth = getAuth();
-
     try {
-      const user = await signOut(auth);
-      user=user;
+      const auth = getAuth();
+      console.log("before:"+user);
+      await signOut(auth);
+      console.log("before2:"+auth);
+      user=null;
+      console.log("after:"+user);
     } catch (error) {
       console.error('로그아웃 실패: ', error);
     }

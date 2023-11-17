@@ -44,10 +44,15 @@ function SignIn(){
         } 
     }
 
-    const SignInHandler = async () => {
+    const SignInHandler = (e) => {
         try {
-            const userData=await signInWithEmailAndPassword(auth, id, password);
-            setUser(userData);
+            const user=signInWithEmailAndPassword(auth, id, password);
+            localStorage.setItem('key',id);
+            const item=localStorage.getItem('key');
+            console.log("item:"+item);
+            //setUser(userData);
+            //console.log("userData:"+ userData);
+            console.log("signIn:"+ user);
             setAlertSignIn('');
             navigate('/main');
         } catch (error) {
