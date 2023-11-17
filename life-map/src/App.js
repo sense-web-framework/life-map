@@ -30,22 +30,10 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 function App() {
 
-  const [user, setUser] = useState("");
-
-  useEffect(() => {
-    const auth = getAuth();
-
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user);
-    });
-
-    return () => unsubscribe();
-  }, []);
-
   return (
     <div className='Main'>
       <BrowserRouter>
-        <NavBar user={user}/>
+        <NavBar/>
         <div className='Body'>
           <Routes>
           <Route path="/" element={<Main/>}></Route>
