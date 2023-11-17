@@ -39,6 +39,22 @@
     font-family: var(--font-AbhayaLibre-ExtraBold);
   }
 
+  .signUp-box-alert {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    top: 95px;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: red;
+  }
+
+
   .signUp-box-button{
     position: absolute;
     width: 397px;
@@ -55,21 +71,6 @@
     letter-spacing: 0em;
     text-align: center;
     font-family: var(--font-AbhayaLibre-ExtraBold);
-  }
-
-  .signUp-box-alert {
-    position: absolute;
-    width: 400px;
-    height: 20px;
-    top: 95px;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: red;
   }
 
   .signUp-box-id{
@@ -91,7 +92,7 @@
     position: absolute;
     width: 397px;
     height: 40px;
-    top: 167px;
+    top: 165px;
     left: 50%;
     transform: translate( -50%, -50%);
     border-radius: 6px;
@@ -151,7 +152,7 @@
     position: absolute;
     width: 397px;
     height: 40px;
-    top: 279px;
+    top: 277px;
     left: 50%;
     transform: translate( -50%, -50%);
     border-radius: 6px;
@@ -211,7 +212,7 @@
     position: absolute;
     width: 397px;
     height: 40px;
-    top: 390px;
+    top: 389px;
     left: 50%;
     transform: translate( -50%, -50%);
     border-radius: 6px;
