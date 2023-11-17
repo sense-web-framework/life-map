@@ -49,9 +49,6 @@ function SignIn(){
             signInWithEmailAndPassword(auth, id, password);
             localStorage.setItem('key',id);
             item=localStorage.getItem('key');
-            //setUser(item);
-            //setUser(userData);
-            //console.log("userData:"+ userData);
             setAlertSignIn('');
             navigate('/main');
         } catch (error) {
@@ -68,7 +65,7 @@ function SignIn(){
                     <div className='signIn-box-title'>SIGN IN</div>
                     <div className='signIn-box-alert'>{alertSignIn}</div>
                     <div className='signIn-box-id'>ID</div>
-                    <input type='id' value={id} onChange={idChangeHandler} placeholder="  Enter your ID" className='signIn-box-id-input'></input>
+                    <input type='text' value={id} onChange={idChangeHandler} placeholder="  Enter your ID" className='signIn-box-id-input'></input>
                     <div className='signIn-box-id-alert'>{alertId}</div>
                     <div className='signIn-box-password'>PASSWORD</div>
                     <input type='password' value={password} onChange={passwordChangeHandler} placeholder="  Enter your Password" className='signIn-box-password-input'></input>

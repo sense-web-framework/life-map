@@ -32,9 +32,9 @@ function NavBar() {
       { item ? (
         <>
         <Link to={'/my-page'}>
-          <button type="button" className='MyPage'>My Page</button>
+          <button type="button" className='Mypage'>MY PAGE</button>
         </Link>
-        <button type="button" className='SignOut' onClick={SignOut}>Sign Out</button>
+        <button type="button" className='SignOut' onClick={SignOut}>SIGN OUT</button>
         </>
         // <>
         // <Link to={'/sign-in'}>
