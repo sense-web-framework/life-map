@@ -5,5 +5,13 @@
 .move_list{
     border: none;
     font-size: 15px;
-    /* background-color : #7000D8; */
+    font-family: 'AbhayaLibre-ExtraBold';
+    background-color: white;
+    color: #7000D8;
+}
+
+.add_btn{
+    border: none;
+    font-family: 'AbhayaLibre-ExtraBold';
+    background-color: white;
 }
