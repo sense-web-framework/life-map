@@ -11,12 +11,13 @@ import SignUp from './pages/SignUp.js';
 import SignIn from './pages/SignIn.js';
 import Footer from './pages/Footer.js';
 import BucketList from './pages/BucketList.js';
+import QuestionAnswer from './pages/QuestionAnswer.js';
 import MyPage from './pages/MyPage.js';
 import BucketCommunity from './pages/Bucket_Community.js';
 import LoungeCommunity from './pages/Lounge_Community.js';
 import TogetherCommunity from './pages/Together_Community.js';
 import AddTogether from './pages/Add_Together.js'
-import { BrowserRouter, Route, Routes} from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { useState, useEffect } from 'react';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
@@ -29,6 +30,17 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth';
 }*/
 
 function App() {
+  const [user, setUser] = useState("");
+
+  useEffect(() => {
+    const auth = getAuth();
+
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   return (
     <div className='Main'>
@@ -41,9 +53,9 @@ function App() {
           <Route path="/question" element={<Question/>}></Route>
           <Route path="/bucket-list" element={<BucketList/>}></Route>
           <Route path="/sign-up" element={<SignUp/>}></Route>
-          <Route path="/sign-in" element={<SignIn/>}>
-          </Route>
+          <Route path="/sign-in" element={<SignIn/>}></Route>
           <Route path="/my-page" element={<MyPage/>}/>
+          <Route path="/question-answer" element={<QuestionAnswer />}></Route>
           <Route path="/community" element={<BucketCommunity/>}></Route>
           <Route path="/community/bucket_community" element={<BucketCommunity/>}></Route>
           <Route path="/community/lounge_community" element={<LoungeCommunity/>}></Route>

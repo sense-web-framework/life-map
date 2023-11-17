@@ -29,20 +29,28 @@
     font-size: 25px;
 }
 
-.answer {
+.question-page-answer {
     height: 700px;
     position: relative;
     text-align: center;
     top: 180px;
 }
 
-.answer-label h2 {
+.fail-question-message {
+    top: 130px;
+    position: relative;
+    text-align: center;
+    font-family: 'KoPub돋움체 Bold';
+    font-size: 20px;
+}
+
+.question-page-answer-label h2 {
     font-family: 'AbhayaLibre-ExtraBold';
     font-size: 40px;
     color: #7000D8;
 }
 
-.answer-form textarea {
+.question-page-answer-form textarea {
     width: 1100px;
     height: 200px;
     font-family: 'KoPub돋움체 Bold';
@@ -53,7 +61,7 @@
     overflow: hidden;
 }
 
-.answer-form input {
+.question-page-answer-form input {
     width: 175px;
     height: 59px;
     border-radius: 6px;
