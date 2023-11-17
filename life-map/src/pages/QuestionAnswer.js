@@ -23,9 +23,12 @@ function QuestionAnswer() {
                     <img src={profileImg} className="profile-img" alt="profile-img" />
                 </div>
                 <div className='user-profile-name'>
-                    난정
+                    {localStorage.getItem('key')}
+                    <br></br>
+                    {localStorage.getItem(localStorage.getItem('key'))}
                 </div>
             </div>
+            
         </div>
     );
 }

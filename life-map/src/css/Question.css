@@ -36,6 +36,14 @@
     top: 180px;
 }
 
+.fail-question-message {
+    top: 130px;
+    position: relative;
+    text-align: center;
+    font-family: 'KoPub돋움체 Bold';
+    font-size: 20px;
+}
+
 .question-page-answer-label h2 {
     font-family: 'AbhayaLibre-ExtraBold';
     font-size: 40px;
