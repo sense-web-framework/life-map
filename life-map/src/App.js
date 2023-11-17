@@ -3,6 +3,7 @@ import './pages/NavBar.js';
 import './css/Main.css';
 import './css/SignIn.css';
 import './css/SignUp.css';
+import './css/MyPage.css';
 import NavBar from './pages/NavBar.js';
 import Main from './pages/Main.js';
 import Question from './pages/Question.js';

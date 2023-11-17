@@ -1,12 +1,129 @@
-.Sign-bg{
-    position: absolute;
-      background-image: url(/src/img/배경.png);
-      min-height: 894px;
-      width: 1920px;
-      top: 130px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-repeat: no-repeat;
-    }
+.myPage-bg{
+  position: absolute;
+  background-image: url(/src/img/배경.png);
+  min-height: 894px;
+  width: 100%;
+  max-width: 100%;
+  top: 130px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+
+.myPage-box{
+  position: absolute;
+  width: 570px;
+  height: 630px;
+  top: 400px;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  border-radius: 17px;
+  background-color: black;
+}
+
+.myPage-box-title{
+  position: absolute;
+  width: 160px;
+  height: 47px;
+  top: 65px;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: center;
+  color:white;
+  font-family: var(--font-AbhayaLibre-ExtraBold);
+}
+
+.myPage-box-image{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top:160px;
+  left: 41%;
+  transform: translate( -50%, -50%);
+}
+
+.myPage-box-nickname{
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  top: 325px;
+  left: 18%;
+  transform: translate( -50%, -50%);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+.myPage-box-nickname-input{
+  position: absolute;
+  width: 397px;
+  height: 40px;
+  top: 362px;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  border-radius: 6px;
+  color: #171717;
+  background-color: #767676;
+}
+
+.myPage-box-nickname-input::placeholder{
+  color:#171717;
+}
+
+.myPage-box-status{
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  top: 415px;
+  left: 34%;
+  transform: translate( -50%, -50%);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+.myPage-box-status-input{
+  position: absolute;
+  width: 397px;
+  height: 40px;
+  top: 452px;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  border-radius: 6px;
+  color: #171717;
+  background-color: #767676;
+}
+
+.myPage-box-status-input::placeholder{
+  color:#171717;
+}
+
+.myPage-box-button{
+  position: absolute;
+  width: 397px;
+  height: 40px;
+  top: 560px;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  border-radius: 6px;
+  color:white;
+  background-color: #7000D8;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: var(--font-AbhayaLibre-ExtraBold);
+}
