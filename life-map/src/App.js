@@ -14,7 +14,7 @@ import MyPage from './pages/MyPage.js';
 import BucketCommunity from './pages/Bucket_Community.js';
 import LoungeCommunity from './pages/Lounge_Community.js';
 import TogetherCommunity from './pages/Together_Community.js';
-import AddTogether from './pages/Add_Together.js';
+import AddTogether from './pages/Add_Together.js'
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import { useState, useEffect } from 'react';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';

@@ -27,7 +27,7 @@ function NavBar({user}) {
         </Link>
       <Link className='Question' to={'/question'}>QUESTION</Link>
       <Link className='Bucketlist' to={'/bucket-list'}>BUCKETLIST</Link>
-      <Link className='Community' to={'/community'}>COMMUNITY</Link>
+      <Link className='Community' to={'/community/bucket_community'}>COMMUNITY</Link>
       { {user} ? (
         // <>
         // <Link to={'/my-page'}>
