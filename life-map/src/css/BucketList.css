@@ -4,7 +4,7 @@
     width: 420px;
     height: 697px;
     top: 15%;
-    left: 20%;
+    left: 15%;
     border: 1px;
 }
 
@@ -52,7 +52,7 @@
     width: 735px;
     height: 433px;
     top: 15%;
-    left: 50%;
+    left: 45%;
     border: 1px;
 }
 
@@ -113,7 +113,7 @@
     position: absolute;
     display: block;
     width: 735px;
-    height: 369px;
+    height: 723px;
     top:69px;
     left:0px;
     border: 1px;
@@ -134,22 +134,10 @@
 
 .Heart{
     position: absolute;
-    top: 15%;
+    top: 7%;
     left: 70%;
     width: 30px;
     height: 20px;
-    border: none;
-    background: url("../img/Heart.png");
-}
-
-.Heart{
-    position: absolute;
-    top: 10%;
-    left: 80%;
-    width: 25px;
-    height: 20px;
-    background-image: url(../img/Heart.png);
-    border: none;
 }
 
 .title_underline{
