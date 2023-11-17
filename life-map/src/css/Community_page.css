@@ -247,7 +247,6 @@
   top: 175px;
   left: 15px;
   color: #000;
-  /* font-family: Arimo; */
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -264,7 +263,7 @@
   }
   .liked{
     position: absolute;
-    background-image: url(../img/Heart.png);
+    /* background-image: url(../img/Heart.png); */
     width: 25px;
     height: 20px;
     background-color: #FFF;
