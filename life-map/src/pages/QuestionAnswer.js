@@ -28,7 +28,6 @@ function QuestionAnswer() {
                     {localStorage.getItem(localStorage.getItem('key'))}
                 </div>
             </div>
-            
         </div>
     );
 }
