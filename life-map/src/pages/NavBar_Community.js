@@ -1,14 +1,29 @@
-import {Link} from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../css/NavBar_Community.css';
-function NavBar_Commnuity(){
-    return(
-        <div className="NavBar_Commnunity">
-            <div class="navbar_nav">
-                <Link className='nav_Bucket_Community' to={'/community/bucket_community'}>버킷리스트</Link>
-                <Link className='nav_Lounge_Community' to={'/community/lounge_community'}>라운지</Link>
-                <Link className='nav_Together_Community' to={'/community/together_community'}>함께해요</Link>
-            </div>
-        </div>
-    );
+
+function NavBar_Community() {
+  const location = useLocation();
+
+  // 현재 URL이 링크의 to 속성과 일치하는지 확인하여 클래스를 동적으로 지정
+  const getLinkClass = (tab) => {
+    return `nav_${tab}_Community ${location.pathname === `/community/${tab.toLowerCase()}_community` ? 'click' : ''}`;
+  };
+
+  return (
+    <div className="NavBar_Commnunity">
+      <div className="navbar_nav">
+        <Link className={getLinkClass('Bucket')} to={'/community/bucket_community'}>
+          <span>버킷리스트</span>
+        </Link>
+        <Link className={getLinkClass('Lounge')} to={'/community/lounge_community'}>
+          <span>라운지</span>
+        </Link>
+        <Link className={getLinkClass('Together')} to={'/community/together_community'}>
+          <span>함께해요</span>
+        </Link>
+      </div>
+    </div>
+  );
 }
-export default NavBar_Commnuity;
+
+export default NavBar_Community;

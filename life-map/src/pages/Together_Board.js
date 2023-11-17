@@ -1,5 +1,6 @@
 import '../css/Together_Board.css'
 import {Link} from 'react-router-dom';
+import Add_Together from './Add_Together.js';
 function Together_Board(){
     return(
         <div className="Together_Board">
@@ -12,6 +13,13 @@ function Together_Board(){
                 <a href="#">오래된순</a>
             </div>
             </div> */}
+          {/* <Add_Together /> */}
+            <Link to={"/community/together_community/add_Together"}>
+                    <input 
+                        type="button"
+                        value="새로 만들기"
+                        className="write_btn"></input>
+                </Link>
                 <table id="1">
                 <tr>
                     <td><div className="TB_picture"></div></td>
@@ -25,7 +33,7 @@ function Together_Board(){
                     <td id='parti_num'>+3</td>
                     <td><div className="TB_bookmark"></div></td>
                     <td id='bookmark_num'>3</td>
-                    <td><input type="button" value="신청하기" className="apply_btn"></input></td>
+                    <td><input type="button" onClick={()=>alert('신청완료!')} value="신청하기" className="apply_btn"></input></td>
                 </tr>
                 <tr>
                     <td><div className="TB_picture"></div></td>
@@ -39,7 +47,7 @@ function Together_Board(){
                     <td id='parti_num'>+3</td>
                     <td><div className="TB_bookmark"></div></td>
                     <td id='bookmark_num'>3</td>
-                    <td><input type="button" value="신청하기" className="apply_btn"></input></td>
+                    <td><input type="button" onClick={()=>alert('신청완료!')} value="신청하기" className="apply_btn"></input></td>
                 </tr>
                 <tr>
                     <td><div className="TB_picture"></div></td>
@@ -53,7 +61,7 @@ function Together_Board(){
                     <td id='parti_num'>+3</td>
                     <td><div className="TB_bookmark"></div></td>
                     <td id='bookmark_num'>3</td>
-                    <td><input type="button" value="신청하기" className="apply_btn"></input></td>
+                    <td><input type="button" onClick={()=>alert('신청완료!')} value="신청하기" className="apply_btn"></input></td>
                 </tr>
                 <tr>
                     <td><div className="TB_picture"></div></td>
@@ -67,7 +75,7 @@ function Together_Board(){
                     <td id='parti_num'>+3</td>
                     <td><div className="TB_bookmark"></div></td>
                     <td id='bookmark_num'>3</td>
-                    <td><input type="button" value="신청하기" className="apply_btn"></input></td>
+                    <td><input type="button" onClick={()=>alert('신청완료!')} value="신청하기" className="apply_btn"></input></td>
                 </tr>
                 </table>
                 <div class="paging">
@@ -79,12 +87,6 @@ function Together_Board(){
                     <li>5</li>
                 </ul>
                 </div>
-                <Link to={"/community/together_community/add_Together"}>
-                    <input 
-                        type="button"
-                        value="새로 만들기"
-                        className="write_btn"></input>
-                </Link>
             </div>
         </div>
     )

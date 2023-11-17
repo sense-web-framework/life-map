@@ -1,4 +1,5 @@
 import Community_page from "./Community_page";
+import LikeButton from "./LikeButton.js";
 function Bucket_Community(){
     return(
         <div className="Buket_Community">
@@ -60,24 +61,6 @@ function Bucket_Community(){
                         </div>
                         </li>
                     </ul>
-             
-                    {/* {
-                        
-                    //  <ul>
-                    // <li className="r">
-                    //     <li>#해시태그<p>1K</p></li>
-                    //     <li>#해시태그<p>1K</p></li>
-                    //     <li>#해시태그<p>1K</p></li></li>
-                    // <li className="r">
-                    //     <li>#해시태그</li><p>1K</p>
-                    //     <li>#해시태그</li><p>1K</p>
-                    //     <li>#해시태그</li><p>1K</p></li>
-                    // <li className="r">
-                    //     <li>#해시태그<p> 1K</p></li>
-                    //     <li>#해시태그<p> 1K</p></li>
-                    //     <li>#해시태그<p> 1K</p></li></li>
-                    // </ul> 
-                    } */}
                 </div>
             </div>
             <div className="mostLiked">
@@ -86,14 +69,6 @@ function Bucket_Community(){
                     <input type="button" className="read-more">
                 </input>
                 </div>
-                
-                {/* <div className="mostLiked-group">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div> */}
                 <div className="user1">
                     <div className="user-icon"></div>
                     <div className="user-name">유저1</div>
@@ -105,8 +80,7 @@ function Bucket_Community(){
                     겨울에 삿포로 여행 가는 건 정말 낭만 있어요 
                     이 부분은 버킷 리스트의 상세 소개 부분이에요...</div>
                     <div className="division-line"></div>
-                    <button className="liked"></button>
-                    <div className="liked-count">30</div>
+                    <div className="liked"><LikeButton></LikeButton></div>
                 </div>
                 <div className="user2">
                     <div className="user-icon"></div>
@@ -119,8 +93,7 @@ function Bucket_Community(){
                     겨울에 삿포로 여행 가는 건 정말 낭만 있어요 
                     이 부분은 버킷 리스트의 상세 소개 부분이에요...</div>
                     <div className="division-line"></div>
-                    <button className="liked"></button>
-                    <div className="liked-count">30</div>
+                    <div className="liked"><LikeButton></LikeButton></div>
                 </div>
                 <div className="user3">
                     <div className="user-icon"></div>
@@ -133,8 +106,7 @@ function Bucket_Community(){
                     겨울에 삿포로 여행 가는 건 정말 낭만 있어요 
                     이 부분은 버킷 리스트의 상세 소개 부분이에요...</div>
                     <div className="division-line"></div>
-                    <button className="liked"></button>
-                    <div className="liked-count">30</div>
+                    <div className="liked"><LikeButton></LikeButton></div>
                 </div>
             </div>
         </div>        

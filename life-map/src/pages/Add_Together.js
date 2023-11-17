@@ -5,6 +5,7 @@ function Add_Together(){
     return(
         <div className="add_Together">
             <Communitypage></Communitypage>
+            <div className="T_title">함께해요</div> 
             <div className="card-write">
                 <div className="card-Info">
                     <div className="c_title">
@@ -20,6 +21,7 @@ function Add_Together(){
                     <div className="c_content">
                     <TextareaAutosize className="c_textarea" placeholder='내용을 입력해주세요'></TextareaAutosize>
                     </div>
+                    <input type="submit" className="submitbtn" value='등록하기'></input>
             </div>
         </div>
     )
