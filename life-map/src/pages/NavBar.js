@@ -3,21 +3,20 @@ import '../css/NavBar.css';
 import {Link} from 'react-router-dom';
 import { getAuth, signOut } from 'firebase/auth';
 
-function NavBar({user}) {
-  console.log('User in NavBar:', user);
+function NavBar() {
+  const item=localStorage.getItem("key");
 
-  const SignOut = async () => {
+  async function SignOut() {
     try {
       const auth = getAuth();
-      console.log("before:"+user);
       await signOut(auth);
-      console.log("before2:"+auth);
-      user=null;
-      console.log("after:"+user);
-    } catch (error) {
+      localStorage.removeItem('key');
+      window.location.replace('/main');
+    }
+     catch (error) {
       console.error('로그아웃 실패: ', error);
     }
-  };
+  }
   
   return (
     <div className='Navbar'>
@@ -30,22 +29,21 @@ function NavBar({user}) {
       <Link className='Question' to={'/question'}>QUESTION</Link>
       <Link className='Bucketlist' to={'/bucket-list'}>BUCKETLIST</Link>
       <Link className='Community' to={'/community/bucket_community'}>COMMUNITY</Link>
-      { {user} ? (
-        // <>
-        // <Link to={'/my-page'}>
-        //   <button type="button" className='MyPage'>My Page</button>
-        // </Link>
-        // <button type="button" className='SignOut' onClick={SignOut}>Sign Out</button>
-        // </>
+      { item ? (
         <>
-        <Link to={'/sign-in'}>
-          <button type="button" className="Signin">SIGN IN</button>
+        <Link to={'/my-page'}>
+          <button type="button" className='MyPage'>My Page</button>
         </Link>
-        <Link to={'/sign-up'}>
-          <button type="button" className="Signup">SIGN UP</button>
-        </Link>
+        <button type="button" className='SignOut' onClick={SignOut}>Sign Out</button>
         </>
-
+        // <>
+        // <Link to={'/sign-in'}>
+        //   <button type="button" className="Signin">SIGN IN</button>
+        // </Link>
+        // <Link to={'/sign-up'}>
+        //   <button type="button" className="Signup">SIGN UP</button>
+        // </Link>
+        // </>
       ) : (
         <>
         <Link to={'/sign-in'}>
