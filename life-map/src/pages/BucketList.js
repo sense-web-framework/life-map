@@ -1,6 +1,8 @@
 import NavBar from './NavBar.js';
 import '../css/BucketList.css'
 import TextareaAutosize from 'react-textarea-autosize'
+import LikeButton from "./LikeButton.js";
+import ListButton from './ListButton.js';
 
 function BucketList() {
 
@@ -11,7 +13,7 @@ function BucketList() {
                 <div className="bucketlist_title">MY BUCKET LIST</div>
                 <div className="list_underline"></div>
                 <div className="list_type">
-                    <ol>
+                    {/* <ol>
                         <li>버킷리스트1</li>
                         <li>버킷리스트2</li>
                         <li>버킷리스트3</li>
@@ -19,7 +21,8 @@ function BucketList() {
                         <li>버킷리스트5</li>
                         <li>버킷리스트6</li>
                         <li>버킷리스트7</li>
-                    </ol>
+                    </ol> */}
+                    <ListButton></ListButton>
                 </div>
             </div>
 
@@ -33,7 +36,7 @@ function BucketList() {
                 </div>
                 <div className="Content">
                     <input type="text" className="Title" placeholder="제목입력"></input>
-                    <input type="button" className="Heart"></input>
+                    <div className="Heart"><LikeButton></LikeButton></div>
                     <div className="title_underline"></div>
                     <input type="text" className="HashTag" placeholder="해시태그"></input>
                     <TextareaAutosize className="Textarea" placeholder="버킷리스트를 작성해주세요" rows={1}></TextareaAutosize>   
