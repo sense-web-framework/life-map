@@ -36,7 +36,7 @@
     top: 90px;
     left: 0px;
     font-family: "AbhayaLibre-SemiBold";
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .list_checkbox{
@@ -119,6 +119,14 @@
     border: 1px;
     border-radius: 9px;
     border-style: solid;
+}
+
+.Secret{
+    position: absolute;
+    display: inline;
+    transform: scale(1.5);
+    top: 5%;
+    left: 5%;
 }
 
 .Title{
