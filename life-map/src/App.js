@@ -16,6 +16,7 @@ import MyPage from './pages/MyPage.js';
 import BucketCommunity from './pages/Bucket_Community.js';
 import LoungeCommunity from './pages/Lounge_Community.js';
 import TogetherCommunity from './pages/Together_Community.js';
+import AddLounge from './pages/Add_Lounge.js';
 import AddTogether from './pages/Add_Together.js'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { useState, useEffect } from 'react';
@@ -61,6 +62,7 @@ function App() {
           <Route path="/community" element={<BucketCommunity/>}></Route>
           <Route path="/community/bucket_community" element={<BucketCommunity/>}></Route>
           <Route path="/community/lounge_community" element={<LoungeCommunity/>}></Route>
+          <Route path="/community/lounge_community/add_Lounge" element={<AddLounge/>}></Route>
           <Route path="/community/together_community" element={<TogetherCommunity/>}></Route>
           <Route path="/community/together_community/add_Together" element={<AddTogether/>}></Route>
           </Routes>

@@ -18,12 +18,14 @@ table {
     border-collapse: collapse;
 }
 table th {
+    position: relative;
     padding: 14px 21px;
     background: #F3F3F3;
     color: black;
     font-size: 15px;
     border-top: 2px solid #333;
     border-bottom: 2px solid #ddd;
+    text-align: center;
 }
 table td {
     padding: 14px 21px;
@@ -72,11 +74,78 @@ table td {
     color:  #7000D8 !important;
     /* color: #fff; */
 }
-.write_btn{
-    position: relative;
+.L_write_btn{
+    position: absolute;
     width: 116px;
     height: 38px;
     left: 90%;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+.Lcard-write{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    background: #fff;
+    left: 50%;
+    top: 500px;
+    transform: translate( -50%, -50%); 
+    border: 3px solid gray;
+    border-radius: 30px 30px;
+    font-size:18px;
+    font-family: 'KoPub돋움체 Bold';
+}
+.c_title{
+    position: relative;
+    top:45px;
+    left: 55px;
+}
+.c_title input{
+    width:500px;
+    border: 1px solid gray;
+    border-radius: 10px 10px;
+}
+.c_hashtag{
+    position: relative;
+    top: 55px;
+    left: 22px;
+}
+.c_hashtag input{
+    width: 350px;
+    border: 1px solid gray;
+    border-radius: 10px 10px;
+}
+.c_group{
+    position: relative;
+    top: 25px;
+    left: 460px;
+}
+.c_group input{
+    width: 30px;
+    border: 1px solid gray;
+    border-radius: 10px 10px;
+    text-align: center;
+}
+.c_textarea{
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 10px 10px;
+    top:80px;
+    left: 90px;
+    height: 200px;
+    width: 520px;
+    text-align: center;
+    white-space: normal;
+}
+.submitbtn{
+    position: relative;
+    width: 116px;
+    height: 38px;
+    transform: translate( -50%, -50%); 
+    left: 50%;
+    top: 320px;
     border-radius: 6px;
     background-color: #333;
     color: white;
