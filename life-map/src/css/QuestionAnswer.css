@@ -1,8 +1,19 @@
+.question-answer-page {
+    height: 800px;
+}
+
 .question-answer-page-my-answer {
     height: 230px;
     position: relative;
     text-align: center;
     top: 180px;
+}
+
+.question-answer-page-other-answer {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    top: 40px;
 }
 
 .question-answer-page-my-answer-label h2 {
@@ -12,8 +23,8 @@
 }
 
 .user-profile {
+    margin-left: 21%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
@@ -40,8 +51,22 @@
 }   
 
 .question-answer-page-answer-box {
-    width: 100px;
+    width: 60%;
     height: 100px;
+    margin-left: 20%;
+    border-radius: 20px;
     background-color: #E8E8E8;
-    border-radius: 10%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.question-answer-page-answer-box h6 {
+    width: 60%;
+    height: 100px;
+    font-family: 'KoPub돋움체 Bold';
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
