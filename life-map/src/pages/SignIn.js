@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import NavBar from './NavBar.js';
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { async } from 'q';
 
 function SignIn(){
     const [id, setId] = useState("");
@@ -44,9 +45,9 @@ function SignIn(){
         } 
     }
 
-    const SignInHandler = (e) => {
+    const SignInHandler = async(e) => {
         try {
-            signInWithEmailAndPassword(auth, id, password);
+            await signInWithEmailAndPassword(auth, id, password);
             localStorage.setItem('key',id);
             item=localStorage.getItem('key');
             setAlertSignIn('');
