@@ -1,6 +1,6 @@
 # Life Map
 
-## 설치 명령어
+## 모듈 설치 명령어
 
 1. `npm install create-react-app`
 2. `npm install react`
