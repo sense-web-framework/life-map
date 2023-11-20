@@ -44,16 +44,14 @@ class ListButton extends Component {
             value={input1}
           />
 
-          <button onClick={handleCreate}>추가</button>
+          <button onClick={handleCreate} className="add_btn">Add</button>
         </div>
         <div>
           <ul>
             {list.map((item, index) => (
               <li key={index} className="Interval">
                 {item.input1}
-                {/* 각 항목 옆에 빈 버튼 추가 */}
-                {/* <button className="move_list">이동</button> */}
-                <input type="button" value="이동" className="move_list"></input>
+                <input type="button" value="Detail" className="move_list"></input>
               </li>
             ))}
           </ul>
