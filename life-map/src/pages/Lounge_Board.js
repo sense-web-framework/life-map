@@ -1,6 +1,24 @@
 import '../css/Lounge_Board.css'
-
+import React, {useState,useEffect} from 'react'
+import {Link} from 'react-router-dom';
+// import Modal from 'react-modal'
+import Add_Lounge from './Add_Lounge'
 function Lounge_Board(){
+    const today = new Date();
+
+    const formattedDate = `${today.getFullYear()}.${today.getMonth() + 1}.${today.getDate()}`;
+    const goToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    // const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [posts, setPosts] = useState([]);
+    useEffect(() => {
+        // localStorage에서 데이터를 읽어옴
+        const storedPosts = JSON.parse(localStorage.getItem('Lounge_post')) || [];
+        setPosts(Array.isArray(storedPosts) ? storedPosts : []);
+      }, []);
+      const user=localStorage.getItem('key')
+      const num=posts.length
     return(
         <div clasName="Lounge_Board">
             <div className="Board">			
@@ -12,20 +30,15 @@ function Lounge_Board(){
                         <th>등록일</th>
                         <th>조회수</th>
                     </tr>
-                    <tr>
-                        <td>15</td>
-                        <td class="subject">제목입니다</td>
-                        <td>유저</td>
-                        <td>2023.10.08</td>
+                    {posts.map((post,index)=>(
+                    <tr key={index}>
+                        <td>{13+num-index}</td>
+                        <td class="subject">{post.title}</td>
+                        <td>{user}</td>
+                        <td>{formattedDate}</td>
                         <td>0</td>
                     </tr>
-                    <tr>
-                        <td>14</td>
-                        <td class="subject">제목입니다</td>
-                        <td>유저</td>
-                        <td>2023.10.08</td>
-                        <td>0</td>
-                    </tr>
+                    ))}
                     <tr>
                         <td>13</td>
                         <td class="subject">제목입니다</td>
@@ -78,7 +91,13 @@ function Lounge_Board(){
                     <li>5</li>
                 </ul>
             </div>
-            <input type="button" value="글쓰기" className="write_btn"></input>
+            <Link to={"/community/lounge_community/add_Lounge"}>
+            <input type="button" value="글쓰기" className="L_write_btn"onClick={goToTop} ></input>
+            </Link>
+            {/* onClick={()=>setModalIsOpen(true)} */}
+            {/* <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+      	<Add_Lounge/>
+      </Modal> */}
         </div>
     </div>
     );
