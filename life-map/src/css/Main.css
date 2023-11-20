@@ -49,7 +49,7 @@
   
   .App-header2 {
     position: absolute;
-    top:130px;
+    top:100px;
     width: 100%;
     min-height: 480px;
   }
@@ -58,7 +58,7 @@
     position: absolute;
     width: 981px;
     height: 167px;
-    top: 1050px;
+    top: 1150px;
     left: 50%;
     transform: translate( -50%, -50%);
     font-size: 40px;
@@ -103,6 +103,23 @@
     text-align: left;
     white-space: pre-line;
     font-family: var(--font-KoPub-Dotum-Bold);
+  }
+
+  .App-header3-question-button{
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 2100px;
+    left: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    color:#333333;
+    border-radius:6px;
+    white-space: pre-line;
   }
   
   .App-header3-question-image{
@@ -154,6 +171,23 @@
     white-space: pre-line;
     font-family: var(--font-KoPub-Dotum-Bold);
   }
+
+  .App-header4-bucketlist-button{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    top: 3109px;
+    left: 65%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    color:#333333;
+    border-radius:6px;
+    white-space: pre-line;
+  }
   
   .App-header5 {
     min-height: 894px;
@@ -187,6 +221,23 @@
     text-align: left;
     white-space: pre-line;
     font-family: var(--font-KoPub-Dotum-Bold);
+  }
+
+  .App-header5-community-button{ 
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 4108px;
+    left: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+    color:#333333;
+    border-radius:6px;
+    white-space: pre-line;
   }
   
   .App-header5-community-image{

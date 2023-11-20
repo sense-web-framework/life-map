@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import '../css/NavBar.css';
 import {Link} from 'react-router-dom';
 import image from '../img/프로필.png';
