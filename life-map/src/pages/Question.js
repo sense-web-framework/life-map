@@ -8,10 +8,21 @@ function Question() {
 
     const navigateToAnswer = () => {
         if (answer.length < 5) {
-            alert('내용이 너무 짧습니다.')
+            alert('내용이 너무 짧습니다.');
         }
         else {
+            const d = localStorage.getItem('question-answers');
+            let a = []
+            if (d) {
+                a = JSON.parse(d);
+                a = a.concat({key: localStorage.getItem('key'), answer: answer});
+            }
+            else {
+                a.push({key: localStorage.getItem('key'), answer: answer});
+            }
+
             localStorage.setItem(localStorage.getItem('key'), answer);
+            localStorage.setItem('question-answers', JSON.stringify(a))
             navigate("/question-answer");
         }
     };
