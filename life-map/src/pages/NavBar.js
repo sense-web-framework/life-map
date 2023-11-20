@@ -1,22 +1,10 @@
 import { useState } from 'react';
 import '../css/NavBar.css';
 import {Link} from 'react-router-dom';
-import { getAuth, signOut } from 'firebase/auth';
+import image from '../img/프로필.png';
 
 function NavBar() {
   const item=localStorage.getItem("key");
-
-  async function SignOut() {
-    try {
-      const auth = getAuth();
-      await signOut(auth);
-      localStorage.removeItem('key');
-      window.location.replace('/main');
-    }
-     catch (error) {
-      console.error('로그아웃 실패: ', error);
-    }
-  }
   
   return (
     <div className='Navbar'>
@@ -32,18 +20,9 @@ function NavBar() {
       { item ? (
         <>
         <Link to={'/my-page'}>
-          <button type="button" className='Mypage'>MY PAGE</button>
+          <img className='Mypage'src={image}></img>
         </Link>
-        <button type="button" className='SignOut' onClick={SignOut}>SIGN OUT</button>
         </>
-        // <>
-        // <Link to={'/sign-in'}>
-        //   <button type="button" className="Signin">SIGN IN</button>
-        // </Link>
-        // <Link to={'/sign-up'}>
-        //   <button type="button" className="Signup">SIGN UP</button>
-        // </Link>
-        // </>
       ) : (
         <>
         <Link to={'/sign-in'}>

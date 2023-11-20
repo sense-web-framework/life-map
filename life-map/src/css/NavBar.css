@@ -77,25 +77,13 @@
 
   .Mypage {
     position: absolute;
-    width: 116px;
-    height: 38px;
-    top: 52px;
-    left: 70%;
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    left: 75%;
     color: #FFFFFF;
-    background-color: #333333;
+    background-color: white;
     border-radius:6px;
-    font-family: var(--font-AbhayaLibre-ExtraBold);
-  }
-
-  .SignOut {
-    position: absolute;
-    width: 116px;
-    height: 38px;
-    top: 52px;
-    left: 78%;
-    background-color: #333333;
-    border-radius:6px;
-    color: white;
     font-family: var(--font-AbhayaLibre-ExtraBold);
   }
 
