@@ -20,6 +20,7 @@ import AddTogether from './pages/Add_Together.js'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { useState, useEffect } from 'react';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import ScrollToTop from './pages/ScrollTop.js';
 
 /*function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <div className='Body'>
+        <ScrollToTop />
           <Routes>
           <Route path="/" element={<Main/>}></Route>
           <Route path="/main" element={<Main/>}></Route>
