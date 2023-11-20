@@ -1,7 +1,11 @@
 import '../css/QuestionAnswer.css';
 import profileImg from '../img/profile-img-source.jpg';
+import { useState, useEffect } from 'react';
 
 function QuestionAnswer() {
+    const d = localStorage.getItem('question-answers');
+    const a = JSON.parse(d);
+
     return (
         <div className="question-answer-page">
             <div className="question-banner">
@@ -28,6 +32,25 @@ function QuestionAnswer() {
                     {localStorage.getItem(localStorage.getItem('key'))}
                 </div>
             </div>
+            <div className="question-answer-page-my-answer">
+                <div className="question-answer-page-my-answer-label">
+                    <h2>OTHER PEOPLE'S ANSWER</h2>
+                </div>
+            </div>
+            {
+                a && a.filter(data => data.key !== localStorage.getItem('key')).map((obj, index) => (
+                    <div className='user-profile' key={index}>
+                        <div className='user-profile-box'>
+                            <img src={profileImg} className="profile-img" alt="profile-img" />
+                        </div>
+                        <div className='user-profile-name'>
+                            {obj.key}
+                            <br></br>
+                            {obj.answer}
+                        </div>
+                    </div>
+                ))
+            }
         </div>
     );
 }
