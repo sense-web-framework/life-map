@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import NavBar from './NavBar.js';
 import image from '../img/프로필.png';
 import { getAuth, signOut } from 'firebase/auth';
