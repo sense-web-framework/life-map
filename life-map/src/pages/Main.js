@@ -5,9 +5,7 @@ import image2 from '../img/이미지2.png';
 import {Link} from 'react-router-dom';
 
 function main(){
-    //<Link className='Question' to={'/question'}>QUESTION</Link>
-      //<Link className='Bucketlist' to={'/bucket-list'}>BUCKETLIST</Link>
-      //<Link className='Community' to={'/community/bucket_community'}>COMMUNITY</Link>
+    
     return (
         <div className="main">
             <NavBar/>
