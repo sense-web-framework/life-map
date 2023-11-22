@@ -151,3 +151,34 @@ table td {
     color: white;
     font-size: 14px;
 }
+#show-card{
+    position: relative;
+    top: 320px;
+    width: 600px;
+    height: 550px;
+    left: 50%;
+    transform: translate( -50%, -50%); 
+    border: 2px solid gray;
+    border-radius: 10px 10px;
+}
+#showTable{
+    position: absolute;
+    top:20px;
+    width: 400px;
+    font-size: 20px;
+    margin-left: 10%;
+}
+#modal{
+    position:absolute;
+    /* top: 100px; */
+    /* transform: translate( -50%, -50%); */
+    width: 900px;
+    height: 700px;
+    overflow: hidden;
+    
+}
+#show-title{
+    font-family: 'KoPub돋움체 Bold';
+    font-size: 27px;
+    text-align: center;
+}
