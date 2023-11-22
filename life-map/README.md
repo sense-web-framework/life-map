@@ -11,4 +11,6 @@
 7. `npm install react-textarea-autosize`
 8. `npm install @ant-design/icons`
 9. `npm install web-vitals`
+10. `npm install react-icons`
+11. `npm install react-modal`
 
