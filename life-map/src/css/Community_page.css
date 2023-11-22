@@ -145,13 +145,14 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 50%; /* 원하는 간격을 조절할 수 있습니다 */
+  gap: 60%; /* 원하는 간격을 조절할 수 있습니다 */
   font-size: 20px;
   font-family: Arimo;
 }
 .h span {
   white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
 }
+
 .mostLiked-title{
   position: absolute;
   width: 284px;
@@ -235,8 +236,7 @@
   list-style: none;
   position: relative;
   float: left;
-  margin-right: 15px;
-  width: 80px;
+  width: 60px;
   top: 100px;
   left: 21px;
 }
