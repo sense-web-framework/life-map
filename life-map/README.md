@@ -13,4 +13,3 @@
 9. `npm install web-vitals`
 10. `npm install react-icons`
 11. `npm install react-modal`
-
